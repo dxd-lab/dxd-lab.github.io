@@ -1022,8 +1022,9 @@
   flex-direction: column;
   background-color: white;
   width: calc(50% - 10px); /* 2 per row on mobile by default */
-  height: 350px;
-  overflow: hidden;
+  height: auto;
+  min-height: 350px;
+  overflow: visible;
 }
 
 .selpubImageContainer {
@@ -1053,21 +1054,18 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  height: calc(100% - 160px - 28px);
-  overflow: hidden;
+  overflow: visible;
 }
 
 .selpubTitle {
   font-weight: bold;
   font-size: 1rem;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   line-height: 1.4;
   color: #333;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  display: block;
+  overflow: visible;
+  text-overflow: initial;
   opacity: 0;
   transform: translate(0, 16px);
   transition: 0.6s;
@@ -1082,12 +1080,10 @@
 .selpubAuthors {
   font-size: 0.85rem;
   color: #666;
-  margin-bottom: 8px;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  margin-bottom: 5px;
+  display: block;
+  overflow: visible;
+  text-overflow: initial;
   opacity: 0;
   transform: translate(0, 16px);
   transition: 0.6s;
@@ -1100,13 +1096,14 @@
 }
 
 .selpubConference {
-  font-size: 0.8rem;
-  color: #888;
-  margin-bottom: 12px;
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 5px;
   opacity: 0;
   transform: translate(0, 16px);
   transition: 0.6s;
   transition-delay: 0.3s;
+  font-weight: 600;
 }
 
 .selpubConference.animation {
@@ -1115,13 +1112,14 @@
 }
 
 .selpubLinks {
-  margin-top: auto;
   display: flex;
   gap: 12px;
   opacity: 0;
   transform: translate(0, 16px);
   transition: 0.6s;
   transition-delay: 0.4s;
+  justify-content: center;
+  margin: 0 0 5px;
 }
 
 .selpubLinks.animation {
@@ -1135,19 +1133,21 @@
   text-decoration: none;
   font-weight: 600;
   position: relative;
+  color: var(--theme-color);
 }
 
 .selpubDoi {
-  color: #007bff;
+  color: var(--theme-color);
 }
 
 .selpubPdf {
-  color: #e74c3c;
+  color: var(--theme-color);
 }
 
 .selpubDoi:hover,
 .selpubPdf:hover {
   text-decoration: underline;
+  opacity: 0.8;
 }
 
 /* Responsive adjustments for smaller screens */
@@ -1160,7 +1160,8 @@
 
   .selpub {
     width: calc(33.33% - 14px); /* 3 per row on medium screens */
-    height: 360px;
+    height: auto;
+    min-height: 360px;
   }
 
   .selpubImageContainer {
@@ -1176,14 +1177,15 @@
   }
 
   .selpubConference {
-    font-size: 0.75rem;
+    font-size: 0.95rem;
   }
 }
 
 @media (min-width: 1200px) {
   .selpub {
     width: calc(25% - 15px); /* 4 per row on large screens */
-    height: 360px;
+    height: auto;
+    min-height: 360px;
   }
 
   .selpubTitle {
@@ -1195,7 +1197,7 @@
   }
 
   .selpubConference {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 
   .selpubDoi,
@@ -1207,7 +1209,8 @@
 @media (max-width: 480px) {
   .selpub {
     width: 100%; /* 1 per row on very small screens */
-    height: 340px;
+    height: auto;
+    min-height: 340px;
   }
 
   .selpubTitle {
@@ -1219,7 +1222,7 @@
   }
 
   .selpubConference {
-    font-size: 0.85rem;
+    font-size: 1.1rem;
   }
 
   .selpubDoi,

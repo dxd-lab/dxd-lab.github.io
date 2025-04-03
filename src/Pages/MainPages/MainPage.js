@@ -40,7 +40,7 @@ export const MainPage = (props) => {
         setPubNum(3); // Medium screens - show 3 publications
       } else {
         setNewsNum(4); // Small screens - show 4 news items (2x2)
-        setPubNum(2); // Small screens - show 2 publications
+        setPubNum(4); // Small screens - show 2 publications (2x2)
       }
     };
 
@@ -220,14 +220,14 @@ export const MainPage = (props) => {
                   />
                 </div>
                 <div className="selpubInfo">
+                  <div ref={element} className="selpubConference">
+                    {publication.venue}
+                  </div>
                   <div ref={element} className="selpubTitle">
                     {publication.title}
                   </div>
                   <div ref={element} className="selpubAuthors">
                     {publication.author}
-                  </div>
-                  <div ref={element} className="selpubConference">
-                    {publication.venue}
                   </div>
                   <div ref={element} className="selpubLinks">
                     {publication.doi && (
@@ -243,7 +243,7 @@ export const MainPage = (props) => {
                     {publication.pdf && (
                       <a
                         className="selpubPdf"
-                        href={`/pdfs/${publication.pdf}.pdf`}
+                        href={`/pdf/${publication.pdf}.pdf`}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
