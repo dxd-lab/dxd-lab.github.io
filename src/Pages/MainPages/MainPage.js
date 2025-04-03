@@ -156,7 +156,7 @@ export const MainPage = (props) => {
           {newsOn
             ? // When expanded, show all news items
               newsdata.map((news, index) => (
-                <div className="news" key={news.content}>
+                <div className="news" key={news.content + news.date}>
                   <img
                     ref={element}
                     className="image"
@@ -199,17 +199,14 @@ export const MainPage = (props) => {
         <div ref={element} className="title">
           • SELECTED PUBLICATIONS •
         </div>
-        <div className={"publicationsContainer"}>
+        <div className={"selpubContainer"}>
           {selectedPublications.map((publication, index) => {
             return index < pubNum ? (
-              <div
-                ref={element}
-                className="publication"
-                key={publication.title}
-              >
-                <div className="pubImageContainer">
+              <div ref={element} className="selpub" key={publication.title}>
+                <div className="selpubImageContainer">
                   <img
-                    className="pubImage"
+                    ref={element}
+                    className="selpubImage"
                     src={
                       publication.pdf
                         ? `/images/publications/${publication.pdf}.jpg`
@@ -222,20 +219,38 @@ export const MainPage = (props) => {
                     }}
                   />
                 </div>
-                <div className="pubInfo">
-                  <div className="pubTitle">{publication.title}</div>
-                  <div className="pubAuthors">{publication.author}</div>
-                  <div className="pubConference">{publication.venue}</div>
-                  {publication.doi && (
-                    <a
-                      className="pubDoi"
-                      href={publication.doi}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      [DOI]
-                    </a>
-                  )}
+                <div className="selpubInfo">
+                  <div ref={element} className="selpubTitle">
+                    {publication.title}
+                  </div>
+                  <div ref={element} className="selpubAuthors">
+                    {publication.author}
+                  </div>
+                  <div ref={element} className="selpubConference">
+                    {publication.venue}
+                  </div>
+                  <div ref={element} className="selpubLinks">
+                    {publication.doi && (
+                      <a
+                        className="selpubDoi"
+                        href={publication.doi}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        DOI
+                      </a>
+                    )}
+                    {publication.pdf && (
+                      <a
+                        className="selpubPdf"
+                        href={`/pdfs/${publication.pdf}.pdf`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        PDF
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             ) : null;
