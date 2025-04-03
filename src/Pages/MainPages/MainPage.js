@@ -3,6 +3,8 @@ import { Navbar } from "../../Components/Navbar/navbar";
 import { Footer } from "../../Components/Footer/footer";
 import coursedata from "../../Data/course.json";
 import newsdata from "../../Data/news.json";
+import bibdata from "../../Data/bib.json";
+import { Link } from "react-router-dom";
 
 /**
  * MainPage Component - The primary landing page for the DxD Lab website
@@ -14,20 +16,31 @@ export const MainPage = (props) => {
   const [newsOn, setNewsOn] = useState(false);
   // State to control how many news items to display based on screen width
   const [newsNum, setNewsNum] = useState(4);
+  // State to control how many publications to display based on screen width
+  const [pubNum, setPubNum] = useState(4);
+
+  // Get publications marked as selected from the bibliography data
+  // Filter out items with empty titles
+  const selectedPublications = bibdata
+    .filter((pub) => pub.title !== "" && pub.selected === 1)
+    .sort((a, b) => b.year - a.year); // Sort selected publications by year in descending order
 
   /**
-   * Effect hook to handle responsive layout for news items
-   * Adjusts the number of visible news items based on window width
+   * Effect hook to handle responsive layout for news items and publications
+   * Adjusts the number of visible items based on window width
    */
   useEffect(() => {
-    // Function to update news items count based on screen size
+    // Function to update items count based on screen size
     const handleResize = () => {
       if (window.innerWidth >= 1200) {
-        setNewsNum(4); // Large screens - show 8 news items
+        setNewsNum(4); // Large screens - show 4 news items
+        setPubNum(4); // Large screens - show 4 publications
       } else if (window.innerWidth >= 800) {
-        setNewsNum(3); // Medium screens - show 6 news items
+        setNewsNum(3); // Medium screens - show 3 news items
+        setPubNum(3); // Medium screens - show 3 publications
       } else {
-        setNewsNum(4); // Small screens - show 4 news items
+        setNewsNum(4); // Small screens - show 4 news items (2x2)
+        setPubNum(2); // Small screens - show 2 publications
       }
     };
 
@@ -135,7 +148,6 @@ export const MainPage = (props) => {
           </div>
           <img ref={element} src={"/images/thumbnail.png"} alt="thumbnail" />
         </div>
-
         {/* News section with expandable content */}
         <div ref={element} className="title">
           • NEWS •
@@ -144,7 +156,7 @@ export const MainPage = (props) => {
           {newsOn
             ? // When expanded, show all news items
               newsdata.map((news, index) => (
-                <div className="news" key={news.content + news.date}>
+                <div className="news" key={news.content}>
                   <img
                     ref={element}
                     className="image"
@@ -179,11 +191,65 @@ export const MainPage = (props) => {
                 ) : null;
               })}
         </div>
-
         {/* Toggle button for expanding/collapsing news section */}
         <div ref={element} className="newstoggle" onClick={newsToggle}>
           {newsOn ? <>Show Less</> : <>Show More</>}
         </div>
+        {/* Selected Publications section */}
+        <div ref={element} className="title">
+          • SELECTED PUBLICATIONS •
+        </div>
+        <div className={"publicationsContainer"}>
+          {selectedPublications.map((publication, index) => {
+            return index < pubNum ? (
+              <div
+                ref={element}
+                className="publication"
+                key={publication.title}
+              >
+                <div className="pubImageContainer">
+                  <img
+                    className="pubImage"
+                    src={
+                      publication.pdf
+                        ? `/images/publications/${publication.pdf}.jpg`
+                        : "/images/thumbnail.png"
+                    }
+                    alt={publication.title}
+                    onError={(e) => {
+                      // Fallback image if the publication image is not found
+                      e.target.src = "/images/thumbnail.png";
+                    }}
+                  />
+                </div>
+                <div className="pubInfo">
+                  <div className="pubTitle">{publication.title}</div>
+                  <div className="pubAuthors">{publication.author}</div>
+                  <div className="pubConference">{publication.venue}</div>
+                  {publication.doi && (
+                    <a
+                      className="pubDoi"
+                      href={publication.doi}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      [DOI]
+                    </a>
+                  )}
+                </div>
+              </div>
+            ) : null;
+          })}
+        </div>
+        {/* Show More button to navigate to the publication page */}
+        <Link
+          to="/publication"
+          ref={element}
+          className="newstoggle"
+          style={{ marginBottom: "90px" }}
+        >
+          Show More
+        </Link>
 
         {/* Courses section */}
         <div ref={element} className="title">
@@ -222,7 +288,6 @@ export const MainPage = (props) => {
             </div>
           ))}
         </div>
-
         {/* Contact information section */}
         <div ref={element} className="title">
           • CONTACT US •
