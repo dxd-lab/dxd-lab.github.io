@@ -1,6 +1,7 @@
 import React, { useCallback, useState, useEffect } from "react";
 import { Navbar } from "../../Components/Navbar/navbar";
 import { Footer } from "../../Components/Footer/footer";
+import { NewsCard } from "../../Components/NewsCard/NewsCard";
 import coursedata from "../../Data/course.json";
 import newsdata from "../../Data/news.json";
 import bibdata from "../../Data/bib.json";
@@ -12,8 +13,6 @@ import { Link } from "react-router-dom";
  * Implements responsive design and scroll-based animations
  */
 export const MainPage = (props) => {
-  // State to control news section expansion/collapse
-  const [newsOn, setNewsOn] = useState(false);
   // State to control how many news items to display based on screen width
   const [newsNum, setNewsNum] = useState(4);
   // State to control how many publications to display based on screen width
@@ -148,20 +147,13 @@ export const MainPage = (props) => {
         </div>
         <div className="newsContainer">
           {newsdata.slice(0, newsNum).map((news) => (
-            <div className="news" key={news.content + news.date}>
-              <img
-                ref={element}
-                className="image"
-                src={"/images/news/" + news.image}
-                alt={news.content}
-              />
-              <div ref={element} className="date">
-                {news.date}
-              </div>
-              <div ref={element} className="newscontents">
-                {news.content}
-              </div>
-            </div>
+            <NewsCard
+              key={news.content + news.date}
+              image={news.image}
+              date={news.date}
+              content={news.content}
+              elementRef={element}
+            />
           ))}
         </div>
         {/* Show More button to navigate to the news page */}

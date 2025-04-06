@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Navbar } from "../../Components/Navbar/navbar";
 import { Footer } from "../../Components/Footer/footer";
+import { NewsCard } from "../../Components/NewsCard/NewsCard";
 import newsdata from "../../Data/news.json";
 
 /**
@@ -8,6 +9,11 @@ import newsdata from "../../Data/news.json";
  * Shows a comprehensive list of news in chronological order
  */
 export const NewsPage = () => {
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   // Callback ref for Intersection Observer implementation
   const element = React.useCallback((node) => {
     // Configuration options for the Intersection Observer
@@ -49,20 +55,13 @@ export const NewsPage = () => {
         {/* News container displaying all news items */}
         <div className="newsContainer">
           {newsdata.map((news) => (
-            <div className="news" key={news.content + news.date}>
-              <img
-                ref={element}
-                className="image"
-                src={"/images/news/" + news.image}
-                alt={news.content}
-              />
-              <div ref={element} className="date">
-                {news.date}
-              </div>
-              <div ref={element} className="newscontents">
-                {news.content}
-              </div>
-            </div>
+            <NewsCard
+              key={news.content + news.date}
+              image={news.image}
+              date={news.date}
+              content={news.content}
+              elementRef={element}
+            />
           ))}
         </div>
       </div>
