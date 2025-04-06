@@ -87,13 +87,6 @@ export const MainPage = (props) => {
     }
   }, []);
 
-  /**
-   * Toggles the expanded/collapsed state of the news section
-   */
-  function newsToggle() {
-    setNewsOn(!newsOn);
-  }
-
   return (
     <>
       {/* Navigation component */}

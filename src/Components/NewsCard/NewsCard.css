@@ -1,0 +1,61 @@
+/* NewsCard Component Styles */
+.news {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 150px;
+}
+
+.news > .image {
+  width: 150px;
+  margin-bottom: 8px;
+  opacity: 0;
+  transform: translate(0, 16px);
+  transition: var(--transition-very-fast);
+  transition-delay: 0.1s;
+}
+
+.news > .image.animation {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.news > .date {
+  color: var(--theme-color);
+  font-family: "Montserrat-Bold";
+  font-size: 18px;
+  margin-bottom: 8px;
+  opacity: 0;
+  transform: translate(0, 16px);
+  transition: var(--transition-fast);
+  transition-delay: 0.1s;
+}
+
+.news > .date.animation {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.news > .newscontents {
+  font-size: 14px;
+  opacity: 0;
+  transform: translate(0, 16px);
+  transition: var(--transition-fast);
+  transition-delay: 0.1s;
+}
+
+.news > .newscontents.animation {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* Responsive Design */
+@media (min-width: 800px) {
+  .news {
+    width: 225px;
+  }
+
+  .news > .image {
+    width: 225px;
+  }
+}
