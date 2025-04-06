@@ -19,11 +19,11 @@ export const MainPage = (props) => {
   // State to control how many publications to display based on screen width
   const [pubNum, setPubNum] = useState(4);
 
-  // Get publications marked as selected from the bibliography data
-  // Filter out items with empty titles
-  const selectedPublications = bibdata
-    .filter((pub) => pub.title !== "" && pub.selected === 1)
-    .sort((a, b) => b.year - a.year); // Sort selected publications by year in descending order
+  // Get the most recent publications from the bibliography data
+  // Filter out items with empty titles and sort by year
+  const recentPublications = bibdata
+    .filter((pub) => pub.title !== "")
+    .sort((a, b) => b.year - a.year); // Sort publications by year in descending order
 
   /**
    * Effect hook to handle responsive layout for news items and publications
@@ -148,65 +148,51 @@ export const MainPage = (props) => {
           </div>
           <img ref={element} src={"/images/thumbnail.png"} alt="thumbnail" />
         </div>
-        {/* News section with expandable content */}
+
+        {/* News section */}
         <div ref={element} className="title">
           • NEWS •
         </div>
-        <div className={newsOn ? "newsContainer" : "newsContainer Wrap"}>
-          {newsOn
-            ? // When expanded, show all news items
-              newsdata.map((news, index) => (
-                <div className="news" key={news.content + news.date}>
-                  <img
-                    ref={element}
-                    className="image"
-                    src={"/images/news/" + news.image}
-                    alt={news.content}
-                  />
-                  <div ref={element} className="date">
-                    {news.date}
-                  </div>
-                  <div ref={element} className="newscontents">
-                    {news.content}
-                  </div>
-                </div>
-              ))
-            : // When collapsed, show limited number of news items based on screen size
-              newsdata.map((news, index) => {
-                return index < newsNum ? (
-                  <div className="news" key={news.content}>
-                    <img
-                      ref={element}
-                      className="image"
-                      src={"/images/news/" + news.image}
-                      alt={news.content}
-                    />
-                    <div ref={element} className="date">
-                      {news.date}
-                    </div>
-                    <div ref={element} className="newscontents">
-                      {news.content}
-                    </div>
-                  </div>
-                ) : null;
-              })}
+        <div className="newsContainer">
+          {newsdata.slice(0, newsNum).map((news) => (
+            <div className="news" key={news.content + news.date}>
+              <img
+                ref={element}
+                className="image"
+                src={"/images/news/" + news.image}
+                alt={news.content}
+              />
+              <div ref={element} className="date">
+                {news.date}
+              </div>
+              <div ref={element} className="newscontents">
+                {news.content}
+              </div>
+            </div>
+          ))}
         </div>
-        {/* Toggle button for expanding/collapsing news section */}
-        <div ref={element} className="newstoggle" onClick={newsToggle}>
-          {newsOn ? <>Show Less</> : <>Show More</>}
-        </div>
-        {/* Selected Publications section */}
+        {/* Show More button to navigate to the news page */}
+        <Link
+          to="/news"
+          ref={element}
+          className="newstoggle"
+          style={{ marginBottom: "90px" }}
+        >
+          Show More
+        </Link>
+
+        {/* Recent Publications section */}
         <div ref={element} className="title">
-          • SELECTED PUBLICATIONS •
+          • RECENT PUBLICATIONS •
         </div>
-        <div className={"selpubContainer"}>
-          {selectedPublications.map((publication, index) => {
+        <div className={"recentPubContainer"}>
+          {recentPublications.map((publication, index) => {
             return index < pubNum ? (
-              <div ref={element} className="selpub" key={publication.title}>
-                <div className="selpubImageContainer">
+              <div ref={element} className="recentPub" key={publication.title}>
+                <div className="recentPubImageContainer">
                   <img
                     ref={element}
-                    className="selpubImage"
+                    className="recentPubImage"
                     src={
                       publication.pdf
                         ? `/images/publications/${publication.pdf}.jpg`
@@ -219,20 +205,20 @@ export const MainPage = (props) => {
                     }}
                   />
                 </div>
-                <div className="selpubInfo">
-                  <div ref={element} className="selpubConference">
+                <div className="recentPubInfo">
+                  <div ref={element} className="recentPubConference">
                     {publication.venue}
                   </div>
-                  <div ref={element} className="selpubTitle">
+                  <div ref={element} className="recentPubTitle">
                     {publication.title}
                   </div>
-                  <div ref={element} className="selpubAuthors">
+                  <div ref={element} className="recentPubAuthors">
                     {publication.author}
                   </div>
-                  <div ref={element} className="selpubLinks">
+                  <div ref={element} className="recentPubLinks">
                     {publication.doi && (
                       <a
-                        className="selpubDoi"
+                        className="recentPubDoi"
                         href={publication.doi}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -242,7 +228,7 @@ export const MainPage = (props) => {
                     )}
                     {publication.pdf && (
                       <a
-                        className="selpubPdf"
+                        className="recentPubPdf"
                         href={`/pdf/${publication.pdf}.pdf`}
                         target="_blank"
                         rel="noopener noreferrer"

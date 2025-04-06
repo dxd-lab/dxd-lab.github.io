@@ -738,20 +738,20 @@
   margin-top: 4px;
 }
 
-/* ===== SELECTED PUBLICATIONS CARDS ===== */
-.selpubContainer {
+/* ===== RECENT PUBLICATIONS CARDS ===== */
+.recentPubContainer {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   margin-bottom: 30px;
 }
 
-.selpubContainer.Wrap {
+.recentPubContainer.Wrap {
   height: auto;
   overflow: hidden;
 }
 
-.selpub {
+.recentPub {
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -761,14 +761,14 @@
   overflow: visible;
 }
 
-.selpubImageContainer {
+.recentPubImageContainer {
   width: 100%;
   height: 160px;
   overflow: hidden;
   background-color: #f9f9f9;
 }
 
-.selpubImage {
+.recentPubImage {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -778,12 +778,12 @@
   transition-delay: 0.1s;
 }
 
-.selpubImage.animation {
+.recentPubImage.animation {
   opacity: 1;
   transform: translate(0, 0);
 }
 
-.selpubInfo {
+.recentPubInfo {
   padding: 14px 4px;
   display: flex;
   flex-direction: column;
@@ -791,7 +791,7 @@
   overflow: visible;
 }
 
-.selpubTitle {
+.recentPubTitle {
   font-weight: bold;
   font-size: 1rem;
   margin-bottom: 5px;
@@ -806,12 +806,12 @@
   transition-delay: 0.1s;
 }
 
-.selpubTitle.animation {
+.recentPubTitle.animation {
   opacity: 1;
   transform: translate(0, 0);
 }
 
-.selpubAuthors {
+.recentPubAuthors {
   font-size: 0.85rem;
   color: #666;
   margin-bottom: 5px;
@@ -824,12 +824,12 @@
   transition-delay: 0.2s;
 }
 
-.selpubAuthors.animation {
+.recentPubAuthors.animation {
   opacity: 1;
   transform: translate(0, 0);
 }
 
-.selpubConference {
+.recentPubConference {
   font-size: 1rem;
   color: #666;
   margin-bottom: 5px;
@@ -840,12 +840,12 @@
   font-weight: 600;
 }
 
-.selpubConference.animation {
+.recentPubConference.animation {
   opacity: 1;
   transform: translate(0, 0);
 }
 
-.selpubLinks {
+.recentPubLinks {
   display: flex;
   gap: 12px;
   opacity: 0;
@@ -856,13 +856,13 @@
   margin: 0 0 5px;
 }
 
-.selpubLinks.animation {
+.recentPubLinks.animation {
   opacity: 1;
   transform: translate(0, 0);
 }
 
-.selpubDoi,
-.selpubPdf {
+.recentPubDoi,
+.recentPubPdf {
   font-size: 0.8rem;
   text-decoration: none;
   font-weight: 600;
@@ -870,8 +870,8 @@
   color: var(--theme-color);
 }
 
-.selpubDoi:hover,
-.selpubPdf:hover {
+.recentPubDoi:hover,
+.recentPubPdf:hover {
   text-decoration: underline;
   opacity: 0.8;
 }
@@ -1027,31 +1027,31 @@
   }
 
   /* Publication cards */
-  .selpubContainer {
+  .recentPubContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
   }
 
-  .selpub {
+  .recentPub {
     width: calc(33.33% - 14px); /* 3 per row on medium screens */
     height: auto;
     min-height: 360px;
   }
 
-  .selpubImageContainer {
+  .recentPubImageContainer {
     height: 160px;
   }
 
-  .selpubTitle {
+  .recentPubTitle {
     font-size: 0.95rem;
   }
 
-  .selpubAuthors {
+  .recentPubAuthors {
     font-size: 0.8rem;
   }
 
-  .selpubConference {
+  .recentPubConference {
     font-size: 0.95rem;
   }
 }
@@ -1103,50 +1103,50 @@
   }
 
   /* Publication cards */
-  .selpub {
+  .recentPub {
     width: calc(25% - 15px); /* 4 per row on large screens */
     min-height: 360px;
   }
 
-  .selpubTitle {
+  .recentPubTitle {
     font-size: 0.9rem;
   }
 
-  .selpubAuthors {
+  .recentPubAuthors {
     font-size: 0.75rem;
   }
 
-  .selpubConference {
+  .recentPubConference {
     font-size: 0.9rem;
   }
 
-  .selpubDoi,
-  .selpubPdf {
+  .recentPubDoi,
+  .recentPubPdf {
     font-size: 0.75rem;
   }
 }
 
 /* Mobile Small (480px and below) */
 @media (max-width: 480px) {
-  .selpub {
+  .recentPub {
     width: 100%; /* 1 per row on very small screens */
     min-height: 340px;
   }
 
-  .selpubTitle {
+  .recentPubTitle {
     font-size: 1.1rem;
   }
 
-  .selpubAuthors {
+  .recentPubAuthors {
     font-size: 0.9rem;
   }
 
-  .selpubConference {
+  .recentPubConference {
     font-size: 1.1rem;
   }
 
-  .selpubDoi,
-  .selpubPdf {
+  .recentPubDoi,
+  .recentPubPdf {
     font-size: 0.85rem;
   }
 }
