@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Navbar } from "../../Components/Navbar/navbar";
 import { Footer } from "../../Components/Footer/footer";
 import { NewsCard } from "../../Components/NewsCard/NewsCard";
@@ -9,11 +9,6 @@ import newsdata from "../../Data/news.json";
  * Shows a comprehensive list of news in chronological order
  */
 export const NewsPage = () => {
-  // Scroll to top when component mounts
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   // Callback ref for Intersection Observer implementation
   const element = React.useCallback((node) => {
     // Configuration options for the Intersection Observer
