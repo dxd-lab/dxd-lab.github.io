@@ -21,7 +21,7 @@
     "image": "sangsu.jpg",
     "homepage": "https://www.sangsu.in/",
     "research_interest": "Personal Informatics, Mental Health, Design for Reflection",
-    "current": true
+    "current": false
   },
   {
     "name": "Taewan Kim",
@@ -37,7 +37,7 @@
     "image": "dasom.png",
     "homepage": "https://dasomchoi.com/",
     "research_interest": "Accessibility, Human-AI Interaction, Marginalized People",
-    "current": true
+    "current": false
   },
   {
     "name": "Kwangyoung Lee",
@@ -45,14 +45,14 @@
     "image": "kwangyoung.png",
     "homepage": "https://kylee5514.github.io/",
     "research_interest": "Personal Informatics, Mental Health, Mental Gym",
-    "current": true
+    "current": false
   },
   {
     "name": "Hyunseung Lim",
     "position": "Ph.D. Student",
     "image": "hyunseung.png",
     "research_interest": "Human-AI Interaction, Large Language Model, Design",
-    "homepage": "",
+    "homepage": "https://hyunseunglim.com",
     "current": true
   },
   {
@@ -116,7 +116,7 @@
     "image": "jongok.jpeg",
     "homepage": "https://froggyjo.github.io/",
     "research_interest": "Data Visualization, Mental Health, Neurodiversity, HCI",
-    "current": true
+    "current": false
   },
   {
     "name": "Sooyohn Nam",
@@ -124,7 +124,7 @@
     "image": "suyeonnam.png",
     "homepage": "https://www.namsuyeon.me/",
     "research_interest": "Human-AI Interaction, LLM",
-    "current": true
+    "current": false
   },
   {
     "name": "Gahyeon Bae",
@@ -275,6 +275,14 @@
     "image": "kyuwon.png",
     "homepage": "",
     "research_interest": "AI-Assisted Decision Making, Behavioral Finance, Persuasive Technology",
+    "current": true
+  },
+  {
+    "name": "Changhwi Park",
+    "position": "Undergraduate Intern",
+    "image": "changhwi.png",
+    "homepage": "",
+    "research_interest": "Human-AI Interaction, Creativity Support Tools, Speculative Design",
     "current": true
   }
 ]

@@ -11,10 +11,10 @@ import { PublicationPage } from "./Pages/MainPages/PublicationPage";
 import { CoursePage } from "./Pages/MainPages/CoursePage";
 
 // Import project page components
-import { HealthPage } from "./Pages/ProjectPages/HealthPage";
-import { AIPage } from "./Pages/ProjectPages/AIPage";
-import { InclusivePage } from "./Pages/ProjectPages/InclusivePage";
-import { DataPage } from "./Pages/ProjectPages/DataPage";
+import { HealthAIPage } from "./Pages/ProjectPages/HealthAIPage";
+import { CollectivesPage } from "./Pages/ProjectPages/CollectivesPage";
+import { AccessibilityPage } from "./Pages/ProjectPages/AccessibilityPage";
+import { AlignmentPage } from "./Pages/ProjectPages/AlignmentPage";
 import { ResearchPage } from "./Pages/ResearchPages/ResearchPage";
 
 // Import the NotFound component for 404 errors
@@ -39,10 +39,10 @@ function App() {
           <Route path="/publication" element={<PublicationPage />} />
           <Route path="/publication/:id" element={<ResearchPage />} />
           <Route path="/course" element={<CoursePage />} />
-          <Route path="/project/health" element={<HealthPage />} />
-          <Route path="/project/ai" element={<AIPage />} />
-          <Route path="/project/inclusive" element={<InclusivePage />} />
-          <Route path="/project/data" element={<DataPage />} />
+          <Route path="/project/health-ai" element={<HealthAIPage />} />
+          <Route path="/project/collectives" element={<CollectivesPage />} />
+          <Route path="/project/accessibility" element={<AccessibilityPage />} />
+          <Route path="/project/alignment" element={<AlignmentPage />} />
           
           {/* Catch-all route for 404 errors - must be placed last */}
           <Route path="*" element={<NotFound />} />          

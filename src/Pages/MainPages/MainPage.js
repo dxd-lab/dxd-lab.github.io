@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Navbar } from "../../Components/Navbar/navbar";
 import { Footer } from "../../Components/Footer/footer";
 import { NewsContainer } from "../../Components/NewsContainer/NewsContainer";
-import coursedata from "../../Data/course.json";
+// import coursedata from "../../Data/course.json";
 
 export const MainPage = (props) => {
   const [newsNum, setNewsNum] = useState(8);
@@ -60,8 +60,8 @@ export const MainPage = (props) => {
           DATA &nbsp;INTERACTION &nbsp;DESIGN
         </div>
         <div ref={element} className="description">
-          DxD Lab is a human-computer interaction research <br /> group in the
-          Industrial Design Department at KAIST{" "}
+          DxD Lab is a Human-Computer Interaction research <br />
+          group in the Department of Industrial Design at KAIST
         </div>
         <img src={"/images/banner.png"} alt="banner" />
       </div>
@@ -74,12 +74,24 @@ export const MainPage = (props) => {
                 design from, with, and by data.
               </b>
               <br />
-              Our mission is to build a more inclusive society by understanding
-              the social impact of data and AI and by making technology
-              accountable and accessible. We seek to explore where data and
-              design intersect, with current research projects mainly lying
-              within the subjects of digital health, inclusive AI/algorithms,
-              and design futures.
+              {/* Our mission is to build a more inclusive and healthy society by
+              shaping the future of human-AI partnership. We design, build, and
+              evaluate novel experiences and interactive systems that align
+              complex AI with human values and augment human capability. We
+              advance the fundamental methods of AI interaction, from designing
+              human-AI collectives to building socio-technical auditing
+              frameworks. Grounded in our identity as design researchers, we
+              apply this deep technical focus to high-stakes domains, pioneering
+              new experiences for digital mental health and developing inclusive
+              technologies for and with neurodiverse populations. */}
+              Our mission is to build a more inclusive and healthy society by
+              shaping the future of human-AI partnership. We design, build and
+              evaluate interactive systems that align AI with human values and
+              augment human capability. As design researchers, we advance
+              fundamental methods of AI interaction and apply them to
+              high-stakes domains, pioneering new experiences for digital mental
+              health and developing inclusive technologies for and with
+              neurodiverse populations.
             </div>
             <div className="researcharea">
               <div ref={element} className="title">
@@ -105,7 +117,7 @@ export const MainPage = (props) => {
           View All News
         </Link>
 
-        <div ref={element} className="title">
+        {/* <div ref={element} className="title">
           • COURSE •
         </div>
         <div className="courseContainer">
@@ -139,7 +151,7 @@ export const MainPage = (props) => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
         <div ref={element} className="title">
           • CONTACT US •
         </div>
