@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ee054e4b.css",
-    "main.js": "/static/js/main.8aa71c5d.js",
+    "main.css": "/static/css/main.ef323b3b.css",
+    "main.js": "/static/js/main.11af90fb.js",
     "static/js/453.08a261cb.chunk.js": "/static/js/453.08a261cb.chunk.js",
     "static/media/Montserrat-ExtraBold.ttf": "/static/media/Montserrat-ExtraBold.6c8b198832c88c649faa.ttf",
     "static/media/Montserrat-Black.ttf": "/static/media/Montserrat-Black.beacc26b4bbaaf608567.ttf",
@@ -11,12 +11,12 @@
     "static/media/samsungsharpsans.woff2": "/static/media/samsungsharpsans.6c4a0e496395b2481784.woff2",
     "static/media/samsungsharpsans-bold.woff2": "/static/media/samsungsharpsans-bold.eddd10fa3bc074d31830.woff2",
     "index.html": "/index.html",
-    "main.ee054e4b.css.map": "/static/css/main.ee054e4b.css.map",
-    "main.8aa71c5d.js.map": "/static/js/main.8aa71c5d.js.map",
+    "main.ef323b3b.css.map": "/static/css/main.ef323b3b.css.map",
+    "main.11af90fb.js.map": "/static/js/main.11af90fb.js.map",
     "453.08a261cb.chunk.js.map": "/static/js/453.08a261cb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee054e4b.css",
-    "static/js/main.8aa71c5d.js"
+    "static/css/main.ef323b3b.css",
+    "static/js/main.11af90fb.js"
   ]
 }
