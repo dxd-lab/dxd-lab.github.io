@@ -509,6 +509,22 @@
   transform: translate(0, 0);
 }
 
+.person > .now {
+  color: #3d3d3d;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 6px 0;
+  opacity: 0;
+  transform: translate(0, 50%);
+  transition: 0.6s;
+  transition-delay: 0.2s;
+}
+
+.person > .now.animation {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
 .person > .link > .linkBtn {
   margin-top: 4px;
   width: 20px;

@@ -125,28 +125,6 @@ export const PeoplePage = (props) => {
             .filter((person) => person.current === false)
             .map((person) => (
               <div className="person alumni" key={person.name}>
-                {/* Image container with research interests overlay */}
-                <div className="image-container">
-                  <img
-                    ref={element}
-                    className="image"
-                    src={"/images/people/" + person.image}
-                    alt={person.name}
-                  />
-                  {/* Conditional render of research interests overlay */}
-                  {person.research_interest && (
-                    <div className="research-overlay">
-                      {/* Split research interests by comma and create individual tags */}
-                      {person.research_interest
-                        .split(",")
-                        .map((interest, index) => (
-                          <span key={index} className="research-tag">
-                            # {interest.trim()}
-                          </span>
-                        ))}
-                    </div>
-                  )}
-                </div>
                 {/* Person details with animation effects */}
                 <p ref={element} className="name">
                   {person.name}
@@ -154,6 +132,19 @@ export const PeoplePage = (props) => {
                 <p ref={element} className="position">
                   {person.position}
                 </p>
+                {person.now ? (
+                  <p ref={element} className="now">
+                    {person.now.includes(" at ") ? (
+                      <>
+                        Now {person.now.split(" at ")[0]}
+                        <br />
+                        at {person.now.split(" at ").slice(1).join(" at ")}
+                      </>
+                    ) : (
+                      `Now ${person.now}`
+                    )}
+                  </p>
+                ) : null}
                 {/* Conditional render of homepage link */}
                 {person.homepage === "" ? null : (
                   <a
