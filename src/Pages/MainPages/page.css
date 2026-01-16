@@ -551,6 +551,95 @@
   width: 80%;
 }
 
+/* ============================================
+   Alumni Section Styles - KIXLAB-inspired design
+   Features two-column grid layout grouped by position categories
+   ============================================ */
+
+/* Main container for the entire alumni section */
+.alumni-section {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+/* Container for each position category group (e.g., Ph.D. Students) */
+.alumni-category {
+  margin-bottom: 32px;
+}
+
+/* Category heading style (e.g., "Postdoctoral Researchers") */
+.alumni-category-title {
+  font-family: "Montserrat-Bold";
+  font-size: 18px;
+  color: var(--theme-color);
+  margin: 0 0 16px 0;
+  opacity: 0;
+  transform: translate(0, 20px);
+  transition: 0.6s;
+}
+
+/* Animation state for category title when visible */
+.alumni-category-title.animation {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* Two-column grid container for alumni entries within each category */
+.alumni-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  padding: 0 80px;
+}
+
+/* Center the single alumni entry when there's only one in the category */
+.alumni-grid.single {
+  justify-items: center;
+}
+
+/* Individual alumni entry container */
+.alumni-entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 4px;
+  padding: 8px 0;
+  opacity: 0;
+  transform: translate(0, 16px);
+  transition: 0.5s;
+}
+
+/* Animation state for alumni entry when visible */
+.alumni-entry.animation {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* Alumni name base style - applies to both link and span versions */
+/* display: inline ensures the clickable area is limited to the text width only */
+.alumni-name {
+  font-family: "Montserrat-Bold";
+  font-size: 14px;
+  color: #3d3d3d;
+  text-decoration: none;
+  display: inline;
+  width: fit-content;
+}
+
+/* Hover effect for clickable alumni names with homepage links */
+a.alumni-name:hover {
+  color: var(--theme-color);
+  text-decoration: underline;
+}
+
+/* Current position text style (e.g., "Now assistant professor at CBNU") */
+.alumni-now {
+  font-size: 13px;
+  color: #666666;
+  line-height: 1.4;
+}
+
 .page > .selection {
   display: flex;
   flex-direction: column;
@@ -990,6 +1079,19 @@
   .person > .image-container > .research-overlay > .research-tag {
     max-width: 160px; /* Desktop size - leave some padding */
   }
+  /* Alumni grid switches to two columns on tablet and larger screens */
+  .alumni-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 24px;
+  }
+  /* When single alumni, use one column to center them */
+  .alumni-grid.single {
+    grid-template-columns: 1fr;
+  }
+  /* Slightly larger font for category titles on larger screens */
+  .alumni-category-title {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1121,5 +1223,18 @@
   }
   .person > .research-tags {
     width: 180px; /* Match desktop card content width */
+  }
+  /* Alumni grid maintains two columns on large desktop screens */
+  .alumni-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 32px;
+  }
+  /* When single alumni, use one column to center them */
+  .alumni-grid.single {
+    grid-template-columns: 1fr;
+  }
+  /* Larger font for category titles on desktop screens */
+  .alumni-category-title {
+    font-size: 20px;
   }
 }

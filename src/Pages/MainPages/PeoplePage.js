@@ -110,59 +110,100 @@ export const PeoplePage = (props) => {
               </div>
             ))}
         </div>
+        {/* Divider line between current members and alumni sections */}
         <img
           className="line"
           ref={element}
           src={`${process.env.PUBLIC_URL}/icons/line.svg`}
           alt="line"
         />
+        {/* Alumni section title with animation effect */}
         <div ref={element} className="title">
           • Alumni •
         </div>
-        <div className="container">
-          {/* Filter and map through people data to show only alumni */}
-          {peopledata
-            .filter((person) => person.current === false)
-            .map((person) => (
-              <div className="person alumni" key={person.name}>
-                {/* Person details with animation effects */}
-                <p ref={element} className="name">
-                  {person.name}
-                </p>
-                <p ref={element} className="position">
-                  {person.position}
-                </p>
-                {person.now ? (
-                  <p ref={element} className="now">
-                    {person.now.includes(" at ") ? (
-                      <>
-                        Now {person.now.split(" at ")[0]}
-                        <br />
-                        at {person.now.split(" at ").slice(1).join(" at ")}
-                      </>
-                    ) : (
-                      `Now ${person.now}`
-                    )}
-                  </p>
-                ) : null}
-                {/* Conditional render of homepage link */}
-                {person.homepage === "" ? null : (
-                  <a
-                    className="link"
-                    href={person.homepage}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      className="linkBtn"
+        {/* Alumni section grouped by position categories - KIXLAB style layout */}
+        <div className="alumni-section">
+          {/* Define position categories in order of seniority for grouping alumni */}
+          {[
+            // Category object for Postdoctoral Researchers
+            { category: "Postdoctoral Researcher", match: "Postdoctoral", exclude: null },
+            // Category object for Ph.D. Students (excluding visiting)
+            { category: "Ph.D. Student", match: "Ph.D.", exclude: "Visiting" },
+            // Category object for Master's Students (excluding visiting)
+            { category: "Master's Student", match: "Master", exclude: "Visiting" },
+            // Category object for Visiting Researchers (Ph.D. and Master's)
+            { category: "Visiting Researcher", match: "Visiting", exclude: null },
+            // Category object for Undergraduate and general Interns
+            { category: "Intern", match: "Intern", exclude: null },
+          ].map(({ category, match, exclude }) => {
+            // Filter alumni data to find those matching the current category
+            const categoryAlumni = peopledata.filter(
+              (person) =>
+                // Must be an alumni (not current member)
+                person.current === false &&
+                // Position must include the category match string
+                person.position.includes(match) &&
+                // Exclude positions containing the exclude string if specified
+                (exclude === null || !person.position.includes(exclude)),
+            );
+            // Only render the category section if there are alumni in it
+            return categoryAlumni.length > 0 ? (
+              // Container for each position category group
+              <div key={category} className="alumni-category">
+                {/* Category heading (e.g., "Ph.D. Students") */}
+                <h3 ref={element} className="alumni-category-title">
+                  {category}
+                </h3>
+                {/* Two-column grid container for alumni entries */}
+                {/* Add 'single' class when only one alumni to center them */}
+                <div className={`alumni-grid${categoryAlumni.length === 1 ? " single" : ""}`}>
+                  {/* Map through each alumni in this category */}
+                  {categoryAlumni.map((person) => (
+                    // Individual alumni entry container
+                    <div
+                      key={person.name}
                       ref={element}
-                      src={`${process.env.PUBLIC_URL}/icons/home.svg`}
-                      alt="home link"
-                    />
-                  </a>
-                )}
+                      className="alumni-entry"
+                    >
+                      {/* Alumni name - render as link if homepage exists, otherwise plain text */}
+                      {person.homepage ? (
+                        // Clickable name linking to alumni's homepage
+                        <a
+                          href={person.homepage}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="alumni-name"
+                        >
+                          {person.name}
+                        </a>
+                      ) : (
+                        // Plain text name when no homepage is available
+                        <span className="alumni-name">{person.name}</span>
+                      )}
+                      {/* Display current position if the "now" field has content */}
+                      {/* If "now" contains "at", line break before "at" */}
+                      {person.now && (
+                        <span className="alumni-now">
+                          {person.now.includes(" at ") ? (
+                            <>
+                              {/* Part before "at" */}
+                              Now {person.now.split(" at ")[0]}
+                              <br />
+                              {/* Part after "at" (join in case of multiple "at") */}
+                              at {person.now.split(" at ").slice(1).join(" at ")}
+                            </>
+                          ) : (
+                            // No "at" found, display as-is
+                            `Now ${person.now}`
+                          )}
+                        </span>
+                      )}
+                    </div>
+                  ))}
+                </div>
               </div>
-            ))}
+            ) : null; // Return null if no alumni in this category
+          })}
         </div>
       </div>
       <Footer />
