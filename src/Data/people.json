@@ -4,15 +4,16 @@
     "position": "Associate Professor",
     "image": "hwajung.png",
     "homepage": "https://galaxytourist.notion.site/galaxytourist/Hwajung-Hong-cc10b0291bbe4ca38dbf4882cd687423",
+    "now": "",
     "current": true
   },
-
   {
     "name": "Bogoan Kim",
     "position": "Postdoctoral Researcher",
     "image": "bogoan.jpg",
     "homepage": "https://bogoankim.github.io/",
     "research_interest": "HCI, Digital Healthcare",
+    "now": "assistant professor at CBNU",
     "current": false
   },
   {
@@ -21,6 +22,7 @@
     "image": "sangsu.jpg",
     "homepage": "https://www.sangsu.in/",
     "research_interest": "Personal Informatics, Mental Health, Design for Reflection",
+    "now": "",
     "current": false
   },
   {
@@ -29,6 +31,7 @@
     "image": "taewan.png",
     "homepage": "https://taewankim.io/",
     "research_interest": "Human-AI Interaction, Mental Health, Self-reflection",
+    "now": "HCI research scientist at TwelveLabs",
     "current": false
   },
   {
@@ -37,6 +40,7 @@
     "image": "dasom.png",
     "homepage": "https://dasomchoi.com/",
     "research_interest": "Accessibility, Human-AI Interaction, Marginalized People",
+    "now": "",
     "current": false
   },
   {
@@ -45,6 +49,7 @@
     "image": "kwangyoung.png",
     "homepage": "https://kylee5514.github.io/",
     "research_interest": "Personal Informatics, Mental Health, Mental Gym",
+    "now": "",
     "current": false
   },
   {
@@ -53,13 +58,15 @@
     "image": "hyunseung.png",
     "research_interest": "Human-AI Interaction, Large Language Model, Design",
     "homepage": "https://hyunseunglim.com",
+    "now": "",
     "current": true
   },
   {
     "name": "Peter Daish",
     "position": "Visiting Ph.D. Student",
     "image": "peter.png",
-    "homepage": "",
+    "homepage": "https://www.linkedin.com/in/peter-daish/",
+    "now": "",
     "current": false
   },
   {
@@ -68,6 +75,7 @@
     "image": "jiazhou.png",
     "homepage": "",
     "research_interest": "Accessibility, Collaborative Learning, Educational Technology",
+    "now": "",
     "current": true
   },
   {
@@ -76,6 +84,7 @@
     "image": "yedam.png",
     "homepage": "",
     "research_interest": "Commons/Commoning, Community-Based Practice, Co-design",
+    "now": "",
     "current": true
   },
   {
@@ -84,6 +93,7 @@
     "image": "joonyoung.jpg",
     "homepage": "https://joonyoung.dev",
     "research_interest": "Human-AI Interaction, Multi-Modal Interaction, Digital Healthcare",
+    "now": "",
     "current": true
   },
   {
@@ -92,6 +102,7 @@
     "image": "chowon.png",
     "homepage": "https://kangchowon.github.io/",
     "research_interest": "Human-AI Interaction, Mental Health, Online Dating",
+    "now": "UX researcher at Hankook Research",
     "current": false
   },
   {
@@ -100,6 +111,7 @@
     "image": "sooyeon.png",
     "homepage": "",
     "research_interest": "Visualized Emotional Space, Mental Health, Self Mental Care, HCI",
+    "now": "Ph.D. student at RCA",
     "current": false
   },
   {
@@ -108,6 +120,7 @@
     "image": "yeohyun.png",
     "homepage": "https://yeohyun.me",
     "research_interest": "Mental Health, Personal Informatics",
+    "now": "",
     "current": false
   },
   {
@@ -116,6 +129,7 @@
     "image": "jongok.jpeg",
     "homepage": "https://froggyjo.github.io/",
     "research_interest": "Data Visualization, Mental Health, Neurodiversity, HCI",
+    "now": "",
     "current": false
   },
   {
@@ -124,6 +138,7 @@
     "image": "suyeonnam.png",
     "homepage": "https://www.namsuyeon.me/",
     "research_interest": "Human-AI Interaction, LLM",
+    "now": "",
     "current": false
   },
   {
@@ -132,15 +147,16 @@
     "image": "gahyeon.png",
     "homepage": "",
     "research_interest": "Human-AI Interaction, Self-reflection, Speculative Design",
+    "now": "",
     "current": true
   },
-
   {
     "name": "Se Hee Kim",
     "position": "Master's Student",
     "image": "sehee.jpeg",
     "homepage": "",
     "research_interest": "Accessibility, Human-AI Interaction, Marginalized People",
+    "now": "",
     "current": true
   },
   {
@@ -149,6 +165,7 @@
     "image": "eunchae.png",
     "homepage": "",
     "research_interest": "Human-AI Interaction, Agency, Personalization",
+    "now": "",
     "current": true
   },
   {
@@ -157,6 +174,7 @@
     "image": "sieun.png",
     "homepage": "",
     "research_interest": "Human-AI Interaction, Mental Health, Participatory Design, Responsible AI",
+    "now": "",
     "current": true
   },
   {
@@ -165,6 +183,7 @@
     "image": "jongik.png",
     "homepage": "https://www.helloiamjongik.com/",
     "research_interest": "Multisensory, Sonic Interaction, Design",
+    "now": "",
     "current": true
   },
   {
@@ -173,6 +192,7 @@
     "image": "yubin.png",
     "homepage": "",
     "research_interest": "Human-AI Interaction, HCI",
+    "now": "",
     "current": false
   },
   {
@@ -181,6 +201,7 @@
     "image": "eunseo.png",
     "homepage": "",
     "research_interest": "Data Visualization, Personal Health",
+    "now": "",
     "current": false
   },
   {
@@ -189,6 +210,7 @@
     "image": "seokyoung.png",
     "homepage": "",
     "research_interest": "Human-AI Interaction, Mental Health, Data Visualization",
+    "now": "",
     "current": false
   },
   {
@@ -197,6 +219,7 @@
     "image": "inhwasong.png",
     "homepage": "https://inhwasong.com",
     "research_interest": "Social Computing, HCI, Computational Social Science",
+    "now": "",
     "current": false
   },
   {
@@ -205,6 +228,7 @@
     "image": "donggun.png",
     "homepage": "",
     "research_interest": "Human-AI Interaction, AI Ethics",
+    "now": "",
     "current": false
   },
   {
@@ -212,6 +236,7 @@
     "position": "Undergraduate Intern",
     "image": "suyounlee.png",
     "homepage": "",
+    "now": "",
     "current": false
   },
   {
@@ -219,6 +244,7 @@
     "position": "Undergraduate Intern",
     "image": "junghoon.png",
     "homepage": "https://hanjnghoon.notion.site/hanjeonghoon-d02ebf87cb8d4a8c8afd4a522dde2e71?pvs=4",
+    "now": "",
     "current": false
   },
   {
@@ -226,6 +252,7 @@
     "position": "Undergraduate Intern",
     "image": "jaehoon.png",
     "homepage": "",
+    "now": "",
     "current": false
   },
   {
@@ -234,15 +261,16 @@
     "image": "sungmin.png",
     "homepage": "https://sungminna.wixsite.com/hci-researcher",
     "research_interest": "HCI, Education, Participatory Design",
+    "now": "",
     "current": true
   },
-
   {
     "name": "Suyeon Seo",
     "position": "Undergraduate Intern",
     "image": "suyeonseo.png",
     "homepage": "https://suyeonportfolio.netlify.app/",
     "research_interest": "Human-AI Interaction, LLM Agent, Data Visualization",
+    "now": "",
     "current": false
   },
   {
@@ -251,6 +279,7 @@
     "image": "enrique.jpg",
     "homepage": "",
     "research_interest": "Human-AI Interaction, Family Informatics, Gamification",
+    "now": "",
     "current": false
   },
   {
@@ -259,6 +288,7 @@
     "image": "eunji.png",
     "homepage": "",
     "research_interest": "Human-AI interaction, HCI, Data Visualization",
+    "now": "",
     "current": false
   },
   {
@@ -267,6 +297,16 @@
     "image": "hyunji.png",
     "homepage": "",
     "research_interest": "Accessibility, Marginalized People, Wearable Computing",
+    "now": "",
+    "current": true
+  },
+  {
+    "name": "Yu Min Choi",
+    "position": "Undergraduate Intern",
+    "image": "yumin.png",
+    "homepage": "",
+    "research_interest": "Human-Human Interaction, Modern Loneliness, Design Intervention",
+    "now": "",
     "current": true
   },
   {
@@ -275,6 +315,7 @@
     "image": "kyuwon.png",
     "homepage": "",
     "research_interest": "AI-Assisted Decision Making, Behavioral Finance, Persuasive Technology",
+    "now": "",
     "current": true
   },
   {
@@ -283,6 +324,7 @@
     "image": "changhwi.png",
     "homepage": "",
     "research_interest": "Human-AI Interaction, Creativity Support Tools, Speculative Design",
+    "now": "",
     "current": true
   }
 ]
