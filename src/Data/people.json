@@ -31,7 +31,7 @@
     "image": "taewan.png",
     "homepage": "https://taewankim.io/",
     "research_interest": "Human-AI Interaction, Mental Health, Self-reflection",
-    "now": "HCI research scientist at TwelveLabs",
+    "now": "research scientist at TwelveLabs",
     "current": false
   },
   {
@@ -192,7 +192,7 @@
     "image": "yubin.png",
     "homepage": "",
     "research_interest": "Human-AI Interaction, HCI",
-    "now": "",
+    "now": "Ph.D. student at UMich",
     "current": false
   },
   {
@@ -201,7 +201,7 @@
     "image": "eunseo.png",
     "homepage": "",
     "research_interest": "Data Visualization, Personal Health",
-    "now": "",
+    "now": "Master's student at KAIST",
     "current": false
   },
   {
@@ -219,7 +219,7 @@
     "image": "inhwasong.png",
     "homepage": "https://inhwasong.com",
     "research_interest": "Social Computing, HCI, Computational Social Science",
-    "now": "",
+    "now": "Ph.D. student at Princeton",
     "current": false
   },
   {
@@ -228,7 +228,7 @@
     "image": "donggun.png",
     "homepage": "",
     "research_interest": "Human-AI Interaction, AI Ethics",
-    "now": "",
+    "now": "Master's student at KAIST",
     "current": false
   },
   {
@@ -236,7 +236,7 @@
     "position": "Undergraduate Intern",
     "image": "suyounlee.png",
     "homepage": "",
-    "now": "",
+    "now": "Master's student at KAIST",
     "current": false
   },
   {
@@ -244,7 +244,7 @@
     "position": "Undergraduate Intern",
     "image": "junghoon.png",
     "homepage": "https://hanjnghoon.notion.site/hanjeonghoon-d02ebf87cb8d4a8c8afd4a522dde2e71?pvs=4",
-    "now": "",
+    "now": "Master's student at KAIST",
     "current": false
   },
   {
@@ -262,7 +262,7 @@
     "homepage": "https://sungminna.wixsite.com/hci-researcher",
     "research_interest": "HCI, Education, Participatory Design",
     "now": "",
-    "current": true
+    "current": false
   },
   {
     "name": "Suyeon Seo",
