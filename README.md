@@ -2,17 +2,15 @@
 
 This is the code for DxD Lab Webpage.
 
-
 ## How to update
 
-Anything that needs to be modified periodically is done in the src/Data folder. This folder contains the following files: news.json, course.json, people.json, project.json, and bib.json. By modifying the contents of each of these files, you can easily update your webpage.  
-
+Anything that needs to be modified periodically is done in the src/Data folder. This folder contains the following files: news.json, course.json, people.json, project.json, and bib.json. By modifying the contents of each of these files, you can easily update your webpage.
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm start` or `npm run dev`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
