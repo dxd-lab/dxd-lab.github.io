@@ -125,51 +125,30 @@ export const PeoplePage = (props) => {
             .filter((person) => person.current === false)
             .map((person) => (
               <div className="person alumni" key={person.name}>
-                {/* Image container with research interests overlay */}
-                <div className="image-container">
-                  <img
-                    ref={element}
-                    className="image"
-                    src={"/images/people/" + person.image}
-                    alt={person.name}
-                  />
-                  {/* Conditional render of research interests overlay */}
-                  {person.research_interest && (
-                    <div className="research-overlay">
-                      {/* Split research interests by comma and create individual tags */}
-                      {person.research_interest
-                        .split(",")
-                        .map((interest, index) => (
-                          <span key={index} className="research-tag">
-                            # {interest.trim()}
-                          </span>
-                        ))}
-                    </div>
-                  )}
-                </div>
                 {/* Person details with animation effects */}
-                <p ref={element} className="name">
-                  {person.name}
-                </p>
-                <p ref={element} className="position">
-                  {person.position}
-                </p>
-                {/* Conditional render of homepage link */}
-                {person.homepage === "" ? null : (
+                {person.homepage ? (
                   <a
-                    className="link"
+                    ref={element}
+                    className="name name-link"
                     href={person.homepage}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img
-                      className="linkBtn"
-                      ref={element}
-                      src={`${process.env.PUBLIC_URL}/icons/home.svg`}
-                      alt="home link"
-                    />
+                    {person.name}
                   </a>
+                ) : (
+                  <p ref={element} className="name">
+                    {person.name}
+                  </p>
                 )}
+                <p ref={element} className="position">
+                  {person.position}
+                </p>
+                {person.now ? (
+                  <p ref={element} className="now">
+                    Now {person.now}
+                  </p>
+                ) : null}
               </div>
             ))}
         </div>

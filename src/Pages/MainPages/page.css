@@ -414,7 +414,16 @@
 
 .person {
   width: 160px;
-  padding: 20px 0;
+  padding: 12px 0;
+}
+
+.person.alumni {
+  min-height: 108px;
+  padding: 6px 0;
+}
+
+.person.alumni > .name {
+  margin-top: 0;
 }
 
 /* Image container with hover effect */
@@ -479,6 +488,7 @@
 }
 
 .person > .name {
+  display: block;
   font-family: "Montserrat-bold";
   color: #3d3d3d;
   font-size: 14px;
@@ -494,10 +504,15 @@
   transform: translate(0, 0);
 }
 
+.person > .name-link {
+  display: inline-block;
+  text-decoration: underline;
+}
+
 .person > .position {
   color: #3d3d3d;
   font-size: 12px;
-  margin: 6px 0;
+  margin: 6px 0 0 0;
   opacity: 0;
   transform: translate(0, 50%);
   transition: 0.6s;
@@ -505,6 +520,21 @@
 }
 
 .person > .position.animation {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.person > .now {
+  color: var(--theme-color);
+  font-size: 12px;
+  margin: 0 0 6px;
+  opacity: 0;
+  transform: translate(0, 50%);
+  transition: 0.6s;
+  transition-delay: 0.25s;
+}
+
+.person > .now.animation {
   opacity: 1;
   transform: translate(0, 0);
 }
@@ -932,6 +962,10 @@
     width: 240px;
     padding: 20px 0;
   }
+  .person.alumni {
+    min-height: 112px;
+    padding: 10px 0;
+  }
   .person > .image-container {
     width: 180px;
     height: 180px;
@@ -1066,6 +1100,10 @@
   .person {
     width: 240px;
     padding: 20px 0;
+  }
+  .person.alumni {
+    min-height: 112px;
+    padding: 10px 0;
   }
   .person > .image-container {
     width: 180px;
