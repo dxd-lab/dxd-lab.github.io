@@ -187,6 +187,15 @@
     "current": true
   },
   {
+    "name": "Sungmin Na",
+    "position": "Intern",
+    "image": "sungmin.png",
+    "homepage": "https://sungminna.wixsite.com/hci-researcher",
+    "research_interest": "HCI, Education, Participatory Design",
+    "now": "",
+    "current": false
+  },
+  {
     "name": "Yubin Choi",
     "position": "Undergraduate Intern",
     "image": "yubin.png",
@@ -254,15 +263,6 @@
     "homepage": "",
     "now": "",
     "current": false
-  },
-  {
-    "name": "Sungmin Na",
-    "position": "Intern",
-    "image": "sungmin.png",
-    "homepage": "https://sungminna.wixsite.com/hci-researcher",
-    "research_interest": "HCI, Education, Participatory Design",
-    "now": "",
-    "current": true
   },
   {
     "name": "Suyeon Seo",
