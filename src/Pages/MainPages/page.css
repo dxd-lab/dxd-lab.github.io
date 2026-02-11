@@ -418,7 +418,12 @@
 }
 
 .person.alumni {
-  min-height: 140px;
+  min-height: 108px;
+  padding: 6px 0;
+}
+
+.person.alumni > .name {
+  margin-top: 0;
 }
 
 /* Image container with hover effect */
@@ -956,6 +961,10 @@
     width: 240px;
     padding: 20px 0;
   }
+  .person.alumni {
+    min-height: 112px;
+    padding: 10px 0;
+  }
   .person > .image-container {
     width: 180px;
     height: 180px;
@@ -1090,6 +1099,10 @@
   .person {
     width: 240px;
     padding: 20px 0;
+  }
+  .person.alumni {
+    min-height: 112px;
+    padding: 10px 0;
   }
   .person > .image-container {
     width: 180px;

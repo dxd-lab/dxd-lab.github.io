@@ -91,8 +91,9 @@ export const PublicationPage = (props) => {
 
     // Process each author name and apply underlining if they are a lab member
     return authorList.map((author, index) => {
-      // Case-insensitive comparison
-      const isLabMember = dxdLabMembers.includes(author.trim().toLowerCase());
+      // Case-insensitive comparison; ignore trailing contribution markers like "*"
+      const normalizedAuthor = author.replace(/\*/g, "").trim().toLowerCase();
+      const isLabMember = dxdLabMembers.includes(normalizedAuthor);
 
       return (
         <span key={index}>
