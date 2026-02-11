@@ -505,6 +505,7 @@
 }
 
 .person > .name-link {
+  display: inline-block;
   text-decoration: underline;
 }
 
