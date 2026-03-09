@@ -99,10 +99,10 @@
     "recording": "",
     "video": "",
     "abstract": "",
-    "web": false
+    "web": "https://joonyoung.dev/projects/chi26"
   },
   {
-    "title": "Building Human—Multi-Agent Teams for Creative Works",
+    "title": "Understanding Human—Multi-Agent Team Formation for Creative Work",
     "author": "Hyunseung Lim, Dasom Choi, Sooyohn Nam, Bogoan Kim, Hwajung Hong",
     "affiliation": "",
     "venue": "CHI 2026 (to appear)",
@@ -116,7 +116,7 @@
     "recording": "",
     "video": "",
     "abstract": "",
-    "web": false
+    "web": "https://hyunseunglim.com/projects/crafteam"
   },
   {
     "title": "Constructing Everyday Well-Being: Insights from God-Saeng (God生) for Personal Informatics",
