@@ -652,6 +652,7 @@
 .bibliography > .others {
   color: #3d3d3d;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   margin-bottom: 4px;
   opacity: 0;
@@ -665,7 +666,25 @@
   transform: translate(0, 0);
 }
 
+.bibliography > .others > .venue {
+  display: flex;
+  align-items: center;
+}
+
+.bibliography > .others > .award {
+  background-color: rgb(255, 243, 131);
+  border-radius: 9999px;
+  padding: 1px 8px;
+  margin-left: 4px;
+  font-size: 0.7em;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+}
+
 .bibliography > .others > .other {
+  display: flex;
+  align-items: center;
   font-size: 13px;
   font-weight: 700;
 }

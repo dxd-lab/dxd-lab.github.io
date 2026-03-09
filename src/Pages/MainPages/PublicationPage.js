@@ -242,19 +242,7 @@ export const PublicationPage = (props) => {
                         <div className="venue">{bib.venue}</div>
                         {bib.award && (
                           <span
-                            style={{
-                              backgroundColor:
-                                "rgb(255, 243, 131)" /* badge background color */,
-                              borderRadius:
-                                "9999px" /* fully rounded container */,
-                              padding:
-                                "1px 8px" /* smaller vertical/horizontal padding */,
-                              marginLeft: "4px" /* reduced space from title */,
-                              fontSize: "0.7em" /* smaller font size */,
-                              fontWeight: "bold" /* bold text for emphasis */,
-                              display:
-                                "inline-block" /* inline-block for positioning */,
-                            }}
+                            className="award"
                           >
                             🏆 {bib.award}
                           </span>
