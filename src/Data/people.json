@@ -97,6 +97,15 @@
     "current": true
   },
   {
+    "name": "Lucy Truong",
+    "position": "Visiting Ph.D. Student",
+    "image": "lucy.png",
+    "homepage": "",
+    "research_interest": "Human-AI Collaboration, Conversational AI, Multi-Stakeholder Design",
+    "now": "",
+    "current": true
+  },
+  {
     "name": "Chowon Kang",
     "position": "Master's Student",
     "image": "chowon.png",
@@ -316,7 +325,7 @@
     "homepage": "",
     "research_interest": "AI-Assisted Decision Making, Behavioral Finance, Persuasive Technology",
     "now": "",
-    "current": true
+    "current": false
   },
   {
     "name": "Changhwi Park",
