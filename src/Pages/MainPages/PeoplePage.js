@@ -16,6 +16,25 @@ import peopledata from "../../Data/people.json";
 import "./page.css";
 
 export const PeoplePage = (props) => {
+  const renderNowText = (now) => {
+    const atIndex = now.search(/\bat\b/);
+
+    if (atIndex === -1) {
+      return <>Now {now}</>;
+    }
+
+    const beforeAt = now.slice(0, atIndex).trimEnd();
+    const afterAt = now.slice(atIndex + 2);
+
+    return (
+      <>
+        Now {beforeAt}
+        <br />
+        at{afterAt}
+      </>
+    );
+  };
+
   // Custom intersection observer hook for scroll animations
   // Creates a reusable callback ref that adds/removes 'animation' class based on viewport visibility
   const element = useCallback((node) => {
@@ -146,7 +165,7 @@ export const PeoplePage = (props) => {
                 </p>
                 {person.now ? (
                   <p ref={element} className="now">
-                    Now {person.now}
+                    {renderNowText(person.now)}
                   </p>
                 ) : null}
               </div>

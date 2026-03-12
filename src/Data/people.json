@@ -13,7 +13,7 @@
     "image": "bogoan.jpg",
     "homepage": "https://bogoankim.github.io/",
     "research_interest": "HCI, Digital Healthcare",
-    "now": "assistant professor at CBNU",
+    "now": "assistant professor at Chungbuk National University",
     "current": false
   },
   {
@@ -22,7 +22,7 @@
     "image": "sangsu.jpg",
     "homepage": "https://www.sangsu.in/",
     "research_interest": "Personal Informatics, Mental Health, Design for Reflection",
-    "now": "",
+    "now": "assistant professor at Chung-Ang University",
     "current": false
   },
   {
@@ -40,7 +40,7 @@
     "image": "dasom.png",
     "homepage": "https://dasomchoi.com/",
     "research_interest": "Accessibility, Human-AI Interaction, Marginalized People",
-    "now": "",
+    "now": "assistant professor at National University of Singapore",
     "current": false
   },
   {
@@ -49,7 +49,7 @@
     "image": "kwangyoung.png",
     "homepage": "https://kylee5514.github.io/",
     "research_interest": "Personal Informatics, Mental Health, Mental Gym",
-    "now": "",
+    "now": "research scientist at Samsung Electronics",
     "current": false
   },
   {
@@ -65,8 +65,8 @@
     "name": "Peter Daish",
     "position": "Visiting Ph.D. Student",
     "image": "peter.png",
-    "homepage": "https://www.linkedin.com/in/peter-daish/",
-    "now": "",
+    "homepage": "",
+    "now": "research assistant at Swansea University",
     "current": false
   },
   {
@@ -120,7 +120,7 @@
     "image": "sooyeon.png",
     "homepage": "",
     "research_interest": "Visualized Emotional Space, Mental Health, Self Mental Care, HCI",
-    "now": "Ph.D. student at RCA",
+    "now": "Ph.D. student at Royal College of Art",
     "current": false
   },
   {
