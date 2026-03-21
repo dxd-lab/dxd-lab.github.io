@@ -344,5 +344,14 @@
     "research_interest": "Human-AI Interaction, Creativity Support Tools, Speculative Design",
     "now": "",
     "current": true
+  },
+  {
+    "name": "Sunmyeong Lee",
+    "position": "Undergraduate Intern",
+    "image": "sunmyeong.png",
+    "homepage": "https://sunmyeonglee.github.io/",
+    "research_interest": "Human-AI Interaction, Self-Reflection, Personal Informatics",
+    "now": "",
+    "current": true
   }
 ]
