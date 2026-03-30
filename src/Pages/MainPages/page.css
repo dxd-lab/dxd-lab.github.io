@@ -527,7 +527,8 @@
 .person > .now {
   color: var(--theme-color);
   font-size: 12px;
-  margin: 0 0 6px;
+  font-weight: 600;
+  margin: 2px 0 6px;
   opacity: 0;
   transform: translate(0, 50%);
   transition: 0.6s;
