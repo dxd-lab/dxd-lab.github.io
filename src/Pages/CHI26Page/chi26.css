@@ -115,33 +115,75 @@
 }
 
 .chi26-paper-list {
+  --chi26-schedule-col: 188px;
+  --chi26-schedule-gap: 18px;
+  --chi26-connector-gap: 32px;
+  --chi26-node-top: 8px;
+  --chi26-node-height: 56px;
+  --chi26-rail-extend: 220px;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: var(--chi26-connector-gap);
   margin-top: 24px;
 }
 
 .chi26-paper-item {
   display: grid;
-  grid-template-columns: 188px minmax(0, 1fr);
-  column-gap: 18px;
+  grid-template-columns: var(--chi26-schedule-col) minmax(0, 1fr);
+  column-gap: var(--chi26-schedule-gap);
   align-items: start;
 }
 
 .chi26-schedule-rail {
+  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
-  padding-top: 8px;
+  padding-top: var(--chi26-node-top);
 }
 
 .chi26-schedule-node {
+  position: relative;
   width: 100%;
+  min-height: var(--chi26-node-height);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: left;
   background: #f4f9fa;
   border: 1px solid #d6e5e9;
   border-radius: 10px;
   padding: 10px 12px;
+  z-index: 1;
+}
+
+.chi26-paper-item:not(:first-child) .chi26-schedule-node::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 100%;
+  margin-bottom: -1px;
+  height: calc((var(--chi26-connector-gap) / 2) + var(--chi26-rail-extend));
+  width: 6px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #c7dee4 0%, #9ebfc8 100%);
+  z-index: -1;
+}
+
+.chi26-paper-item:not(:last-child) .chi26-schedule-node::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
+  margin-top: -1px;
+  height: calc((var(--chi26-connector-gap) / 2) + var(--chi26-rail-extend));
+  width: 6px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #c7dee4 0%, #9ebfc8 100%);
+  z-index: -1;
 }
 
 .chi26-schedule-date {
@@ -288,7 +330,13 @@
   .chi26-schedule-node {
     text-align: left;
     width: 100%;
+    min-height: 0;
     padding: 8px 10px;
+  }
+
+  .chi26-schedule-node::before,
+  .chi26-schedule-node::after {
+    display: none;
   }
 
   .chi26-paper-title {

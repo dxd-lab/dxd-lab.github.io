@@ -124,7 +124,8 @@ export const CHI26Page = () => {
           <h1 className="chi26-title">DxD Lab @CHI2026</h1>
           <p className="chi26-description">
             <b>DxD Lab</b> at ID KAIST is excited to present{" "}
-            <b>8 full papers</b> including 4 paper awards at CHI2026! <br />
+            <b>8 full papers</b> including <b>4 paper awards</b> at CHI2026!{" "}
+            <br />
             Take a look at our schedule and drop by our sessions if you can.
             <br />
             If there's a paper you'd like to learn more about, feel free to
@@ -134,7 +135,7 @@ export const CHI26Page = () => {
             The following lab members will be attending the conference in
             person.
             <br />
-            So come say hi👋 if you see us around!
+            Come say hi👋 if you see us around!
           </p>
           {/* <h2 className="chi26-attendees-title">Attending CHI2026 In Person</h2> */}
           <section
