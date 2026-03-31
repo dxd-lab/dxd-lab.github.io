@@ -83,14 +83,22 @@ export const CHI26Page = () => {
     () =>
       (chi26Data.attendingInPerson || []).map((name) => {
         const person = peopleByName.get(normalizeAuthorName(name));
-        return (
-          person || {
-            name,
-            position: "DxD Lab",
-            image: "human-placeholder.png",
-            homepage: "",
-          }
-        );
+        const attendee = person || {
+          name,
+          position: "DxD Lab",
+          image: "human-placeholder.png",
+          homepage: "",
+        };
+
+        // Page-local update requested for CHI26 only.
+        if (normalizeAuthorName(name) === normalizeAuthorName("Inhwa Song")) {
+          return {
+            ...attendee,
+            position: "Now Ph.D. Student at Princeton",
+          };
+        }
+
+        return attendee;
       }),
     [peopleByName],
   );
