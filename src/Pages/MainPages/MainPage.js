@@ -112,6 +112,11 @@ export const MainPage = (props) => {
           </div>
           <img ref={element} src={"/images/thumbnail.png"} alt="thumbnail" />
         </div>
+
+        <Link to="/chi26" ref={element} className="chi26toggle">
+          Explore DxD's Schedule at CHI 2026 !
+        </Link>
+
         <NewsContainer limit={newsNum} showTitle={true} />
         <Link to="/news" ref={element} className="newstoggle">
           View All News
