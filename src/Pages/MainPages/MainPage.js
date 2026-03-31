@@ -114,7 +114,7 @@ export const MainPage = (props) => {
         </div>
 
         <Link to="/chi26" ref={element} className="chi26toggle">
-          Explore DxD's Schedule at CHI 2026 !
+          Find DxD at CHI2026 !
         </Link>
 
         <NewsContainer limit={newsNum} showTitle={true} />
