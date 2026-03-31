@@ -9,6 +9,7 @@ import { NewsPage } from "./Pages/MainPages/NewsPage";
 import { ProjectPage } from "./Pages/MainPages/ProjectPage";
 import { PublicationPage } from "./Pages/MainPages/PublicationPage";
 import { CoursePage } from "./Pages/MainPages/CoursePage";
+import { CHI26Page } from "./Pages/CHI26Page/CHI26Page";
 
 // Import project page components
 import { HealthAIPage } from "./Pages/ProjectPages/HealthAIPage";
@@ -37,6 +38,7 @@ function App() {
           <Route path="/news" element={<NewsPage />} />
           <Route path="/project" element={<ProjectPage />} />
           <Route path="/publication" element={<PublicationPage />} />
+          <Route path="/chi26" element={<CHI26Page />} />
           <Route path="/publication/:id" element={<ResearchPage />} />
           <Route path="/course" element={<CoursePage />} />
           <Route path="/project/health-ai" element={<HealthAIPage />} />

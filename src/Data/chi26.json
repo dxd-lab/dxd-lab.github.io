@@ -1,0 +1,162 @@
+{
+  "attendingInPerson": [
+    "Hwajung Hong",
+    "Hyunseung Lim",
+    "Jiazhou Wu",
+    "Joonyoung Park",
+    "Hyuna Jo",
+    "Se Hee Kim",
+    "Sieun Kim",
+    "Inhwa Song",
+    "Yu Min Choi"
+  ],
+  "papers": [
+    {
+      "title": "Your Call—Keep or Wrap: Examining the Impact of Self-regulatory Intervention on Short-form Video Consumption Behavior",
+      "session": "Video Presentations",
+      "date": "2026-04-13",
+      "time": "11:15 - 11:15",
+      "authors": ["Yeohyun Jung", "Sooyohn Nam", "Junhyun An", "Hwajung Hong"],
+      "award": "Honorable Mention",
+      "abstract": "",
+      "pdf": "",
+      "web": "",
+      "venue": "Video Presentations",
+      "program": "https://programs.sigchi.org/chi/2026/program/content/222371"
+    },
+    {
+      "title": "Dark and Bright Side of Participatory Red-Teaming with Targets of Stereotyping for Eliciting Harmful Behaviors from Large Language Models",
+      "session": "Social Media Discourse and Online Harms",
+      "date": "2026-04-17",
+      "time": "11:15 - 11:27",
+      "authors": [
+        "Sieun Kim",
+        "Yeeun Jo",
+        "Sungmin Na",
+        "Hyunseung Lim",
+        "Eunchae Lee",
+        "Yu Min Choi",
+        "Soohyun Cho",
+        "Hwajung Hong"
+      ],
+      "award": "Honorable Mention",
+      "abstract": "",
+      "pdf": "",
+      "web": "",
+      "venue": "P1 - Room 119",
+      "program": "https://programs.sigchi.org/chi/2026/program/content/222677"
+    },
+    {
+      "title": "I Choose to Live, for Life Itself: Understanding Agency of Home-Based Care Patients Through Information Practices and Relational Dynamics in Care Networks",
+      "session": "Care and Lived Practices",
+      "date": "2026-04-15",
+      "time": "09:48 - 10:00",
+      "authors": [
+        "Sung-In Kim*",
+        "Joonyoung Park*",
+        "Bogoan Kim",
+        "Hwajung Hong"
+      ],
+      "award": "Honorable Mention",
+      "abstract": "",
+      "pdf": "",
+      "web": "https://joonyoung.me/projects/chi26",
+      "venue": "P1 - Room 113",
+      "program": "https://programs.sigchi.org/chi/2026/program/content/222641"
+    },
+    {
+      "title": "Understanding Human—Multi-Agent Team Formation for Creative Work",
+      "session": "AI Systems for Human Goals",
+      "date": "2026-04-14",
+      "time": "09:36 - 09:48",
+      "authors": [
+        "Hyunseung Lim",
+        "Dasom Choi",
+        "Sooyohn Nam",
+        "Bogoan Kim",
+        "Hwajung Hong"
+      ],
+      "award": "",
+      "abstract": "",
+      "pdf": "",
+      "web": "https://hyunseunglim.com/projects/crafteam",
+      "venue": "P1 - Room 122",
+      "program": "https://programs.sigchi.org/chi/2026/program/content/223036"
+    },
+    {
+      "title": "Moodialogue: Transforming Emotions into Personified, Conversational Agents",
+      "session": "Video Presentations",
+      "date": "2026-04-13",
+      "time": "11:15 - 11:15",
+      "authors": ["Sangsu Jang", "Sieun Kim", "Gahyeon Bae", "Hwajung Hong"],
+      "award": "",
+      "abstract": "",
+      "pdf": "",
+      "web": "",
+      "venue": "Video Presentations",
+      "program": "https://programs.sigchi.org/chi/2026/program/content/222600"
+    },
+    {
+      "title": "Constructing Everyday Well-Being: Insights from God-Saeng (God生) for Personal Informatics",
+      "session": "AI Explanations and Decision Support in Healthcare",
+      "date": "2026-04-13",
+      "time": "12:27 - 12:39",
+      "authors": [
+        "Inhwa Song",
+        "Kwangyoung Lee",
+        "Janghee Cho",
+        "Amon Rapp",
+        "Hwajung Hong"
+      ],
+      "award": "",
+      "abstract": "",
+      "pdf": "https://arxiv.org/pdf/2603.00847",
+      "web": "",
+      "venue": "Auditorium",
+      "program": "https://programs.sigchi.org/chi/2026/program/content/222876"
+    },
+    {
+      "title": "Exploring Data-Driven Approaches to Stress Management: A Systematic Review of Stress Tracking, Intervention, and System Evaluation Methods",
+      "session": "Stress Management and Emotional Regulation",
+      "date": "2026-04-16",
+      "time": "11:39 - 11:51",
+      "authors": [
+        "Youngji Koh",
+        "Jeonghyun Kim",
+        "Kwangyoung Lee",
+        "Yugyeong Jung",
+        "Hwajung Hong",
+        "Uichin Lee"
+      ],
+      "award": "",
+      "abstract": "",
+      "pdf": "",
+      "web": "",
+      "venue": "P1 - Room 124",
+      "program": "https://programs.sigchi.org/chi/2026/program/content/223194"
+    },
+    {
+      "title": "When Scaffolding Breaks: Investigating Student Interaction with LLM-Based Writing Support in Real-Time K-12 EFL Classrooms",
+      "session": "Human-in-the-Loop Machine Learning Interfaces",
+      "date": "2026-04-17",
+      "time": "09:12 - 09:24",
+      "authors": [
+        "Junho Myung",
+        "Hyunseung Lim",
+        "Hana Oh",
+        "Hyoungwook Jin",
+        "Nayeon Kang",
+        "So-Yeon Ahn",
+        "Hwajung Hong",
+        "Alice Oh",
+        "Juho Kim"
+      ],
+      "award": "Best Paper",
+      "abstract": "",
+      "pdf": "https://arxiv.org/abs/2512.05506",
+      "web": "",
+      "venue": "P1 - Room 111",
+      "program": "https://programs.sigchi.org/chi/2026/program/content/221871"
+    }
+  ]
+}

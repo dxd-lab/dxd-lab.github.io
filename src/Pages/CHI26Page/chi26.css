@@ -1,0 +1,381 @@
+.chi26-page {
+  padding: 120px 0 48px;
+  text-align: left;
+}
+
+.chi26-container {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.chi26-title,
+.chi26-description,
+.chi26-attendees-title,
+.chi26-attendees-container,
+.chi26-section-title,
+.chi26-note,
+.chi26-timezone-note,
+.chi26-paper-list {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.chi26-title {
+  margin: 0;
+  font-family: "montserrat-Extrabold";
+  font-size: clamp(32px, 5vw, 46px);
+  color: #bce5e0;
+}
+
+.chi26-description {
+  max-width: 760px;
+  margin: 18px 0 0;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #2f4046;
+}
+
+.chi26-attendees-title {
+  margin: 44px 0 14px;
+  font-family: "montserrat-Extrabold";
+  font-size: 24px;
+  color: #1d3338;
+}
+
+.chi26-attendees-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.chi26-person {
+  width: 160px;
+  padding: 12px 0;
+  text-align: center;
+}
+
+.chi26-person-image-container {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto;
+}
+
+.chi26-person-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.chi26-person-name {
+  display: block;
+  margin: 10px 0 0;
+  font-family: "montserrat-bold";
+  color: #3d3d3d;
+  font-size: 14px;
+}
+
+.chi26-person-position {
+  margin: 6px 0 0;
+  color: #3d3d3d;
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.chi26-person-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.chi26-person-link-icon {
+  width: 20px;
+  margin-top: 4px;
+}
+
+.chi26-section-title {
+  margin: 0 0 4px;
+  font-family: "montserrat-Extrabold";
+  font-size: 30px;
+  color: #1d3338;
+}
+
+.chi26-note {
+  margin: 0 0 20px;
+  font-size: 13px;
+  color: #5b7075;
+}
+
+.chi26-timezone-note {
+  margin: -10px 0 20px;
+  font-size: 13px;
+  color: #5b7075;
+}
+
+.chi26-paper-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.chi26-paper-item {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  column-gap: 18px;
+  position: relative;
+  align-items: stretch;
+}
+
+.chi26-schedule-rail {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 28px;
+}
+
+.chi26-schedule-rail::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 14px;
+  width: 3px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #bdd6dd 0%, #96b8c1 100%);
+}
+
+.chi26-paper-item:first-child .chi26-schedule-rail::before {
+  top: 50%;
+}
+
+.chi26-paper-item:last-child .chi26-schedule-rail::before {
+  bottom: 50%;
+}
+
+.chi26-schedule-node {
+  position: relative;
+  text-align: right;
+  background: #f7fbfc;
+  border: 1px solid #d6e5e9;
+  border-radius: 12px;
+  padding: 10px 12px;
+  box-shadow: 0 4px 14px rgba(10, 26, 34, 0.06);
+}
+
+.chi26-schedule-node::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 7px);
+  right: -21px;
+  width: 12px;
+  height: 12px;
+  border: 3px solid #8fb1ba;
+  border-radius: 50%;
+  background: #f7fbfc;
+  box-shadow: 0 0 0 4px #ffffff;
+  z-index: 1;
+}
+
+.chi26-schedule-node::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 1px);
+  right: -9px;
+  width: 24px;
+  height: 3px;
+  border-radius: 999px;
+  background: #a9c5cd;
+}
+
+.chi26-schedule-date {
+  font-family: "montserrat-bold";
+  font-size: 13px;
+  color: #2f4f57;
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+}
+
+.chi26-schedule-time {
+  margin-top: 3px;
+  font-size: 13px;
+  color: #3f5f67;
+  font-family: "montserrat-bold";
+}
+
+.chi26-paper-card {
+  position: relative;
+  border: 1px solid #d7e5e8;
+  border-radius: 16px;
+  background: #ffffff;
+  padding: 22px;
+  box-shadow: 0 8px 20px rgba(10, 26, 34, 0.05);
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.chi26-paper-card::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 1px);
+  left: -18px;
+  width: 18px;
+  height: 3px;
+  border-radius: 999px;
+  background: #a9c5cd;
+}
+
+.chi26-paper-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 28px rgba(10, 26, 34, 0.09);
+}
+
+.chi26-paper-title {
+  margin: 0;
+  font-family: "montserrat-bold";
+  font-size: 22px;
+  line-height: 1.45;
+  color: #13252a;
+}
+
+.chi26-award-row {
+  margin-bottom: 10px;
+}
+
+.chi26-paper-details {
+  margin: 16px 0 0;
+}
+
+.chi26-detail-row {
+  margin-top: 12px;
+}
+
+.chi26-detail-row dt {
+  margin-bottom: 4px;
+  font-family: "montserrat-bold";
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  color: #4f666d;
+  text-transform: uppercase;
+}
+
+.chi26-detail-row dd {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #22383d;
+}
+
+.chi26-abstract-row dd {
+  white-space: pre-line;
+}
+
+.chi26-lab-member {
+  font-family: "montserrat-bold";
+  color: #114b57;
+}
+
+.chi26-award {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 999px;
+  background: #fff4cc;
+  color: #6a4b00;
+  padding: 4px 10px;
+  font-family: "montserrat-bold";
+  font-size: 13px;
+}
+
+.chi26-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chi26-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #8fb4bc;
+  border-radius: 999px;
+  color: #1e5e6b;
+  text-decoration: none;
+  font-family: "montserrat-bold";
+  font-size: 13px;
+  padding: 6px 12px;
+}
+
+.chi26-link:hover {
+  background: #eef6f8;
+}
+
+.chi26-link-pending {
+  color: #6e8084;
+  font-size: 14px;
+}
+
+@media (max-width: 760px) {
+  .chi26-page {
+    padding-top: 104px;
+  }
+
+  .chi26-container {
+    padding: 0 14px;
+  }
+
+  .chi26-attendees-title {
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+
+  .chi26-attendees-container {
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 38px;
+  }
+
+  .chi26-paper-card {
+    padding: 16px;
+  }
+
+  .chi26-paper-item {
+    grid-template-columns: 1fr;
+    row-gap: 6px;
+  }
+
+  .chi26-schedule-rail {
+    justify-content: flex-start;
+    padding: 0;
+  }
+
+  .chi26-schedule-rail::before {
+    display: none;
+  }
+
+  .chi26-schedule-node {
+    text-align: left;
+    width: fit-content;
+    padding: 8px 10px;
+  }
+
+  .chi26-schedule-node::before,
+  .chi26-schedule-node::after {
+    display: none;
+  }
+
+  .chi26-paper-card::before {
+    display: none;
+  }
+
+  .chi26-paper-title {
+    font-size: 18px;
+  }
+
+  .chi26-detail-row dd {
+    font-size: 14px;
+  }
+}
