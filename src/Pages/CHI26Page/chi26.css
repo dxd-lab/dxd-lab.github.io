@@ -117,77 +117,31 @@
 .chi26-paper-list {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 32px;
+  margin-top: 24px;
 }
 
 .chi26-paper-item {
   display: grid;
-  grid-template-columns: 220px minmax(0, 1fr);
+  grid-template-columns: 188px minmax(0, 1fr);
   column-gap: 18px;
-  position: relative;
-  align-items: stretch;
+  align-items: start;
 }
 
 .chi26-schedule-rail {
-  position: relative;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding-right: 28px;
-}
-
-.chi26-schedule-rail::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 14px;
-  width: 3px;
-  border-radius: 999px;
-  background: linear-gradient(180deg, #bdd6dd 0%, #96b8c1 100%);
-}
-
-.chi26-paper-item:first-child .chi26-schedule-rail::before {
-  top: 50%;
-}
-
-.chi26-paper-item:last-child .chi26-schedule-rail::before {
-  bottom: 50%;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding-top: 8px;
 }
 
 .chi26-schedule-node {
-  position: relative;
-  text-align: right;
-  background: #f7fbfc;
+  width: 100%;
+  text-align: left;
+  background: #f4f9fa;
   border: 1px solid #d6e5e9;
-  border-radius: 12px;
+  border-radius: 10px;
   padding: 10px 12px;
-  box-shadow: 0 4px 14px rgba(10, 26, 34, 0.06);
-}
-
-.chi26-schedule-node::before {
-  content: "";
-  position: absolute;
-  top: calc(50% - 7px);
-  right: -21px;
-  width: 12px;
-  height: 12px;
-  border: 3px solid #8fb1ba;
-  border-radius: 50%;
-  background: #f7fbfc;
-  box-shadow: 0 0 0 4px #ffffff;
-  z-index: 1;
-}
-
-.chi26-schedule-node::after {
-  content: "";
-  position: absolute;
-  top: calc(50% - 1px);
-  right: -9px;
-  width: 24px;
-  height: 3px;
-  border-radius: 999px;
-  background: #a9c5cd;
 }
 
 .chi26-schedule-date {
@@ -206,31 +160,11 @@
 }
 
 .chi26-paper-card {
-  position: relative;
   border: 1px solid #d7e5e8;
   border-radius: 16px;
   background: #ffffff;
   padding: 22px;
-  box-shadow: 0 8px 20px rgba(10, 26, 34, 0.05);
-  transition:
-    box-shadow 0.2s ease,
-    transform 0.2s ease;
-}
-
-.chi26-paper-card::before {
-  content: "";
-  position: absolute;
-  top: calc(50% - 1px);
-  left: -18px;
-  width: 18px;
-  height: 3px;
-  border-radius: 999px;
-  background: #a9c5cd;
-}
-
-.chi26-paper-card:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 12px 28px rgba(10, 26, 34, 0.09);
+  /* box-shadow: 0 8px 20px rgba(10, 26, 34, 0.05); */
 }
 
 .chi26-paper-title {
@@ -348,27 +282,13 @@
   }
 
   .chi26-schedule-rail {
-    justify-content: flex-start;
-    padding: 0;
-  }
-
-  .chi26-schedule-rail::before {
-    display: none;
+    padding-top: 0;
   }
 
   .chi26-schedule-node {
     text-align: left;
-    width: fit-content;
+    width: 100%;
     padding: 8px 10px;
-  }
-
-  .chi26-schedule-node::before,
-  .chi26-schedule-node::after {
-    display: none;
-  }
-
-  .chi26-paper-card::before {
-    display: none;
   }
 
   .chi26-paper-title {

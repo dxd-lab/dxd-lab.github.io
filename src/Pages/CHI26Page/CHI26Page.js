@@ -123,18 +123,18 @@ export const CHI26Page = () => {
         <div className="chi26-container">
           <h1 className="chi26-title">DxD Lab @CHI2026</h1>
           <p className="chi26-description">
-            DxD Lab at ID KAIST is excited to present <b>8 full papers</b>{" "}
-            including 4 paper awards at CHI2026! <br />
-            Check out our schedule and join our sessions.
+            <b>DxD Lab</b> at ID KAIST is excited to present{" "}
+            <b>8 full papers</b> including 4 paper awards at CHI2026! <br />
+            Take a look at our schedule and drop by our sessions if you can.
             <br />
-            If you are interested in a specific work, please feel free to
-            contact the author.
+            If there's a paper you'd like to learn more about, feel free to
+            reach out to the author.
           </p>
           <p className="chi26-description">
             The following lab members will be attending the conference in
             person.
             <br />
-            Feel free to come say hi👋 if you see us around!
+            So come say hi👋 if you see us around!
           </p>
           {/* <h2 className="chi26-attendees-title">Attending CHI2026 In Person</h2> */}
           <section
