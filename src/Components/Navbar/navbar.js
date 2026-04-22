@@ -30,9 +30,6 @@ export const Navbar = () => {
             <Link to="/news" className="hamburger-bar">
               <span>NEWS</span>
             </Link>
-            <Link to="/chi26" className="hamburger-bar">
-              <span>CHI2026</span>
-            </Link>
           </div>
           <div className="links">
             <Link to="/" className="navBtn">
@@ -49,9 +46,6 @@ export const Navbar = () => {
             </Link>
             <Link to="/news" className="navBtn">
               <span>NEWS</span>
-            </Link>
-            <Link to="/chi26" className="navBtn">
-              <span>CHI2026</span>
             </Link>
           </div>
         </div>
