@@ -136,7 +136,7 @@ export const PeoplePage = (props) => {
           alt="line"
         />
         <div ref={element} className="title">
-          • Alumni •
+          • ALUMNI •
         </div>
         <div className="container">
           {/* Filter and map through people data to show only alumni */}
