@@ -196,6 +196,15 @@
     "current": true
   },
   {
+    "name": "Changhwi Park",
+    "position": "Master's Student",
+    "image": "changhwi.png",
+    "homepage": "",
+    "research_interest": "Human-AI Interaction, Creativity Support Tools, Speculative Design",
+    "now": "",
+    "current": true
+  },
+  {
     "name": "Jongik Jeon",
     "position": "Visiting Master's Student",
     "image": "jongik.png",
@@ -335,15 +344,6 @@
     "research_interest": "AI-Assisted Decision Making, Behavioral Finance, Persuasive Technology",
     "now": "",
     "current": false
-  },
-  {
-    "name": "Changhwi Park",
-    "position": "Undergraduate Intern",
-    "image": "changhwi.png",
-    "homepage": "",
-    "research_interest": "Human-AI Interaction, Creativity Support Tools, Speculative Design",
-    "now": "",
-    "current": true
   },
   {
     "name": "Sunmyeong Lee",
