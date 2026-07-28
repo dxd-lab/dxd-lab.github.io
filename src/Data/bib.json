@@ -17,6 +17,23 @@
     "web": false
   },
   {
+    "title": "Toward User-Orchestrated Human–Multi-Agent Teams for Co-Creation",
+    "author": "Hyunseung Lim, Hwajung Hong",
+    "affiliation": "",
+    "venue": "ICML 2026",
+    "award": "",
+    "year": 2026,
+    "field": ["collectives"],
+    "type": "workshop",
+    "pdf": "hyunseung2026icml",
+    "doi": "https://icml.cc/virtual/2026/68539",
+    "bibtex": "",
+    "recording": "",
+    "video": "",
+    "abstract": "",
+    "web": false
+  },
+  {
     "title": "When Special Education Meets LLMs: Investigating the use of LLM-based Conversational AI by Special Education Teachers for Autism in China",
     "author": "Jiazhou Wu, Dasom Choi, Bogoan Kim, Hwajung Hong",
     "affiliation": "KAIST, National University of Singapore, Chungbuk National University, KAIST",
