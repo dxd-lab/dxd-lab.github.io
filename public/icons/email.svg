@@ -6,9 +6,9 @@
 >
   <defs>
     <mask id="envelope-cutout" maskUnits="userSpaceOnUse">
-      <rect x="32" y="32" width="192" height="192" rx="20" fill="white" />
+      <rect x="32" y="40" width="192" height="176" rx="18" fill="white" />
       <path
-        d="M40 56L128 132L216 56"
+        d="M40 62L128 132L216 62"
         fill="none"
         stroke="black"
         stroke-width="14"
@@ -19,10 +19,10 @@
   </defs>
   <rect
     x="32"
-    y="32"
+    y="40"
     width="192"
-    height="192"
-    rx="20"
+    height="176"
+    rx="18"
     fill="#4d4d4d"
     mask="url(#envelope-cutout)"
   />
