@@ -571,16 +571,28 @@
   transform: translate(0, 0);
 }
 
-.person > .link > .linkBtn {
+.person > .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
   margin-top: 4px;
+}
+
+.person > .links > .link {
+  display: inline-flex;
+}
+
+.person > .links > .link > .linkBtn {
   width: 20px;
+  height: 20px;
   opacity: 0;
   transform: translate(0, 50%);
   transition: 0.6s;
   transition-delay: 0.2s;
 }
 
-.person > .link > .linkBtn.animation {
+.person > .links > .link > .linkBtn.animation {
   opacity: 1;
   transform: translate(0, 0);
 }
