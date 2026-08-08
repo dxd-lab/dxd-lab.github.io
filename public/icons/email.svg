@@ -1,0 +1,29 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="256"
+  height="256"
+  viewBox="0 0 256 256"
+>
+  <defs>
+    <mask id="envelope-cutout" maskUnits="userSpaceOnUse">
+      <rect x="32" y="32" width="192" height="192" rx="20" fill="white" />
+      <path
+        d="M40 56L128 132L216 56"
+        fill="none"
+        stroke="black"
+        stroke-width="14"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </mask>
+  </defs>
+  <rect
+    x="32"
+    y="32"
+    width="192"
+    height="192"
+    rx="20"
+    fill="#4d4d4d"
+    mask="url(#envelope-cutout)"
+  />
+</svg>

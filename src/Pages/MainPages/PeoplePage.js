@@ -110,22 +110,41 @@ export const PeoplePage = (props) => {
                 <p ref={element} className="position">
                   {person.position}
                 </p>
-                {/* Conditional render of homepage link */}
-                {person.homepage === "" ? null : (
-                  <a
-                    className="link"
-                    href={person.homepage}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      className="linkBtn"
-                      ref={element}
-                      src={`${process.env.PUBLIC_URL}/icons/home.svg`}
-                      alt="home link"
-                    />
-                  </a>
-                )}
+                {/* Conditional render of homepage and email links */}
+                {person.homepage || person.email ? (
+                  <div className="links">
+                    {person.homepage ? (
+                      <a
+                        className="link"
+                        href={person.homepage}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`${person.name}'s homepage`}
+                      >
+                        <img
+                          className="linkBtn"
+                          ref={element}
+                          src={`${process.env.PUBLIC_URL}/icons/home.svg`}
+                          alt=""
+                        />
+                      </a>
+                    ) : null}
+                    {person.email ? (
+                      <a
+                        className="link"
+                        href={`mailto:${person.email}`}
+                        aria-label={`Email ${person.name}`}
+                      >
+                        <img
+                          className="linkBtn"
+                          ref={element}
+                          src={`${process.env.PUBLIC_URL}/icons/email.svg`}
+                          alt=""
+                        />
+                      </a>
+                    ) : null}
+                  </div>
+                ) : null}
               </div>
             ))}
         </div>
