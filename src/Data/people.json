@@ -112,6 +112,16 @@
     "current": true
   },
   {
+    "name": "Jaein Kim",
+    "position": "Ph.D. Student",
+    "image": "jaein.png",
+    "homepage": "http://www.jaein.kim/",
+    "email": "jaeinkim@kaist.ac.kr",
+    "research_interest": "Culturally Responsive AI, Inclusive Design, Human-AI Interaction",
+    "now": "",
+    "current": true
+  },
+  {
     "name": "Lucy Truong",
     "position": "Visiting Ph.D. Student",
     "image": "lucy.png",
@@ -232,6 +242,16 @@
     "research_interest": "HCI, Education, Participatory Design",
     "now": "",
     "current": false
+  },
+  {
+    "name": "Hajun Kim",
+    "position": "Intern",
+    "image": "hajun.png",
+    "homepage": "https://hajunkim.com/",
+    "email": "hajun0628@gmail.com",
+    "research_interest": "Human-AI Interaction, Agency, AI-Mediated Communication",
+    "now": "",
+    "current": true
   },
   {
     "name": "Yubin Choi",
