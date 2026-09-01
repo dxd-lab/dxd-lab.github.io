@@ -27,6 +27,16 @@
     "current": false
   },
   {
+    "name": "Yedam Ryu",
+    "position": "Postdoctoral Researcher",
+    "image": "yedam.png",
+    "homepage": "",
+    "email": "ryd0728@kaist.ac.kr",
+    "research_interest": "Commons/Commoning, Community-Based Practice, Co-design",
+    "now": "",
+    "current": true
+  },
+  {
     "name": "Taewan Kim",
     "position": "Ph.D. Student",
     "image": "taewan.png",
@@ -78,16 +88,6 @@
     "homepage": "",
     "email": "jzwu0629@kaist.ac.kr",
     "research_interest": "Accessibility, Collaborative Learning, Educational Technology",
-    "now": "",
-    "current": true
-  },
-  {
-    "name": "Yedam Ryu",
-    "position": "Ph.D. Student",
-    "image": "yedam.png",
-    "homepage": "",
-    "email": "ryd0728@kaist.ac.kr",
-    "research_interest": "Commons/Commoning, Community-Based Practice, Co-design",
     "now": "",
     "current": true
   },
