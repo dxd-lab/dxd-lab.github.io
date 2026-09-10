@@ -1,5 +1,10 @@
 [
   {
+    "content": "Jaein and Changhwi joined DxD",
+    "image": "join.gif",
+    "date": "SEP, 2026"
+  },
+  {
     "content": "Yedam successfully defended her Ph.D. Thesis",
     "image": "may2026_defense.png",
     "date": "MAY, 2026"
@@ -12,6 +17,11 @@
   {
     "content": "Yeohyun, Sieun and Joonyoung won Honorable Mention Awards for CHI 2026 🎉",
     "image": "mar2026_chi.png",
+    "date": "MAR, 2026"
+  },
+  {
+    "content": "Sieun joined DxD",
+    "image": "join.gif",
     "date": "MAR, 2026"
   },
   {
@@ -50,7 +60,7 @@
     "date": "SEP, 2025"
   },
   {
-    "content": "Eunchae and Se Hee joined DxD",
+    "content": "Yedam, Eunchae and Se Hee joined DxD",
     "image": "join.gif",
     "date": "SEP, 2025"
   },
