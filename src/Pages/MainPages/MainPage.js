@@ -158,10 +158,10 @@ export const MainPage = (props) => {
         </div>
         <div className="contactContainer">
           <div ref={element} className="contact">
-            <div className="title">DxD Lab</div>
+            <div className="title">The Lab</div>
             <div>
-              Room 304, Dept. of Industrial Design, KAIST 291 Daehak-ro,
-              Yuseong-gu, Daejeon 34141, Republic of Korea
+              Room 304, Bldg. N25, 291 Daehak-ro, Yuseong-gu, Daejeon, Republic
+              of Korea (34141)
             </div>
             <a
               className="button"
@@ -171,9 +171,9 @@ export const MainPage = (props) => {
             >
               Google Map
             </a>
-            <div className="title">Email</div>
-            <div>Prof. Hwajung Hong : hwajung@kaist.ac.kr</div>
-            <div>Lab Mail: dxd.kaist@gmail.com</div>
+            <div className="title">Contact</div>
+            <div>Hwajung Hong (Director) : hwajung@kaist.ac.kr</div>
+            <div>Joonyoung Park (Ph.D. Student): joonyoung@kaist.ac.kr</div>
           </div>
           <img
             ref={element}
