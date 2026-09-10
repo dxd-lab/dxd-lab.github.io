@@ -102,10 +102,10 @@ export const MainPage = (props) => {
                   HCI
                 </div>
                 <div ref={element} className="area">
-                  AI
+                  HAI
                 </div>
                 <div ref={element} className="area">
-                  DIGITAL HEALTH
+                  INCLUSIVE DESIGN
                 </div>
               </div>
             </div>
@@ -171,7 +171,7 @@ export const MainPage = (props) => {
             >
               Google Map
             </a>
-            <div className="title">Contact</div>
+            <div className="title">Email</div>
             <div>Hwajung Hong (Director) : hwajung@kaist.ac.kr</div>
             <div>Joonyoung Park (Ph.D. Student): joonyoung@kaist.ac.kr</div>
           </div>

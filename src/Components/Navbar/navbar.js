@@ -22,10 +22,10 @@ export const Navbar = () => {
               <span>PEOPLE</span>
             </Link>
             <Link to="/project" className="hamburger-bar">
-              <span>PROJECT</span>
+              <span>PROJECTS</span>
             </Link>
             <Link to="/publication" className="hamburger-bar">
-              <span>PUBLICATION</span>
+              <span>PUBLICATIONS</span>
             </Link>
             <Link to="/news" className="hamburger-bar">
               <span>NEWS</span>
@@ -39,10 +39,10 @@ export const Navbar = () => {
               <span>PEOPLE</span>
             </Link>
             <Link to="/project" className="navBtn">
-              <span>PROJECT</span>
+              <span>PROJECTS</span>
             </Link>
             <Link to="/publication" className="navBtn">
-              <span>PUBLICATION</span>
+              <span>PUBLICATIONS</span>
             </Link>
             <Link to="/news" className="navBtn">
               <span>NEWS</span>
