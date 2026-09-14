@@ -173,7 +173,7 @@ export const MainPage = (props) => {
             </a>
             <div className="title">Email</div>
             <div>Hwajung Hong (Director) : hwajung@kaist.ac.kr</div>
-            <div>Joonyoung Park (Ph.D. Student): joonyoung@kaist.ac.kr</div>
+            <div>Joonyoung Park (Ph.D. Student) : joonyoung@kaist.ac.kr</div>
           </div>
           <img
             ref={element}
